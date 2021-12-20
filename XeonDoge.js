@@ -641,7 +641,7 @@ options
 };
 
 const daftar1 = `*Hi ${pushname}* 👋\n*Please Verify First*`
-const daftar2 = '_Click the button below to verify_'
+const daftar2 = '_Click the button below to verify if You cant see A button Type !verify _'
 const daftar3 = [{buttonId: `verify`,buttonText: {displayText: `🤤VERIFY🤤`,},type: 1,},]
 
 const createSerial = (size) => {
@@ -1609,69 +1609,83 @@ case 'listmenu':
  stod = `${sender}`
  listMsg = {
  buttonText: 'LIST MENU',
- description: `_*Hi, please choose the menu*_`,
+ description: `_*Yo Boi, Choose The Menu from The list Below!*_`,
  sections: [
                      {
-                      "title": `NishiV2`,
+                      "header": {"text":"NishiV2"},
  rows: [
                           {
                               "title": "SellBot",
+															"description": "🤑Buy The Bot💵",
                               "rowId": ""
                            },
                            {
                               "title": "Speed",
+															"description": "⚡Speed Of The Bot⚡",
                               "rowId": ""
                            },
                            {
                               "title": "SoundMenu",
+															"description": "🎶Prebuilt Sounds",
                               "rowId": ""
                            },
                            {
                               "title": "Status",
+															"description": "🎂Janam KundalI Of The Bot",
                               "rowId": ""
                            },
                            {
                               "title": "Creator",
+															"description": "👻ReBuilt By Nischal•Powered By Xeon",
                               "rowId": ""
                            },
                            {
                               "title": "RentBot",
+															"description": "🧧Rent This Bot",
                               "rowId": ""
                             },
                            {
                               "title": "IntakeMenu",
+															"description": "🎈This is Some Fun",
                               "rowId": ""
                            },
                            {
                               "title": "Runtime",
+															"description": "Nishi-Bot V2 Made with <3 By Nischal",
                               "rowId": ""
                            },
                            {
                               "title": "OwnerMenu",
+															"description": "Core Code By Xeon",
                               "rowId": ""
                            },
                            {
                               "title": "MakerMenu",
+															"description": "🍰Productive Features",
                               "rowId": ""
                            },
                            {
                               "title": "GroupMenu",
+															"description": "🧑🏻‍🤝‍🧑🏾Group Features",
                               "rowId": ""
                            },
                            {
                               "title": "NsfwMenu",
+															"description": "🔞Adult Features NSFW Must Be Active",
                               "rowId": ""
                            },
                                       {
                               "title": "AnimeMenu",
+															"description": "🏯Anime Options",
                               "rowId": ""
                            },
                            {
                               "title": "OtherMenu",
-                              "rowId": ""
+                              "rowId": "🧠Interesting Menu"
                            },
                            {
                               "title": "DownloadMenu",
+															"rowId": "⬇️HomeMade Downloader for most of the platforms"
                               "rowId": ""
                            }
                         ]
@@ -1715,7 +1729,7 @@ stamtus = `❏ 「 \`\`\`18+ MENU\`\`\` 」
 🤤 ${prefix}wallml
 ────────────────────`
 buttons = [
-{buttonId:`sc`,buttonText:{displayText: 'ReCoder Nischak'},type:1},
+{buttonId:`sc`,buttonText:{displayText: 'ReCoder Nischal'},type:1},
 {buttonId:`owner`, buttonText: {displayText: 'Powered By Xeon'}, type: 1}
 ]
 const animerandomx = {
