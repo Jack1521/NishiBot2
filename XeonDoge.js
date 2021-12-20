@@ -21,7 +21,7 @@ const
 		waChatKey,
 		mentionedJid,
 		processTime,
-		prepareMessageFromContent, 
+		prepareMessageFromContent,
 		relayWAMessage
 	} = require("@adiwajshing/baileys")
 const simple = require('./lib/simple.js')
@@ -307,9 +307,9 @@ try {
 		const botNumber = alpha.user.jid
 		const isGroup = from.endsWith('@g.us')
 		const sender = mek.key.fromMe ? alpha.user.jid : isGroup ? mek.participant : mek.key.remoteJid
-		const senderNumber = sender.split("@")[0] 
+		const senderNumber = sender.split("@")[0]
 		const conts = mek.key.fromMe ? alpha.user.jid : alpha.contacts[mek.sender]
-        const pushname = mek.key.fromMe ? alpha.user.name : !conts ? '-' : conts.notify || conts.vname || conts.name || '-'   
+        const pushname = mek.key.fromMe ? alpha.user.name : !conts ? '-' : conts.notify || conts.vname || conts.name || '-'
 		const totalchat = await alpha.chats.all()
 		const groupMetadata = isGroup ? await alpha.groupMetadata(from) : ''
 		const groupName = isGroup ? groupMetadata.subject : ''
@@ -425,7 +425,7 @@ var imageTime = await getBuffer('https://ih1.redbubble.net/image.1702383886.0106
                                          }
 if(time2 < "06:00"){
 var imageTime = await getBuffer('https://ih1.redbubble.net/image.1702383886.0106/ur,pin_small_front,wide_portrait,750x1000.jpg')
-}	
+}
 const ftok = {
 key: {
 			fromMe: false,
@@ -438,8 +438,8 @@ key: {
 						"mimetype": "image/jpeg",
 						"jpegThumbnail": imageTime //Gambarnye
 					},
-					"title": `${tampilUcapan} ${pushname}`, //Kasih namalu 
-					"description": `${tampilUcapan} ${pushname}`, 
+					"title": `${tampilUcapan} ${pushname}`, //Kasih namalu
+					"description": `${tampilUcapan} ${pushname}`,
 					"currencyCode": "USD",
 					"priceAmount1000": "2000",
 					"retailerId": `${tampilUcapan} ${pushname}`,
@@ -462,7 +462,7 @@ const ftrol = {
                             message: `_${tampilUcapan}_\n_${pushname}_`, //Kasih namalu
                             orderTitle: `${tampilUcapan} ${pushname}`,
                             thumbnail: dfrply, //Gambarnye
-                            sellerJid: '0@s.whatsapp.net' 
+                            sellerJid: '0@s.whatsapp.net'
                           }
                         }
                         }
@@ -485,23 +485,23 @@ const fdoc = {
                         },
        message: {
                     documentMessage: {
-                    title: `${tampilUcapan} kak`, 
+                    title: `${tampilUcapan} kak`,
                     jpegThumbnail: dfrply
                           }
                         }
                       }
 // VIDEO
 const fvid = {
-	 key: { 
+	 key: {
           fromMe: false,
-	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	      participant: `0@s.whatsapp.net`, ...(from ?
+	 { remoteJid: "6289643739077-1613049930@g.us" } : {})
                 },
-	 message: { 
-                 "videoMessage": { 
+	 message: {
+                 "videoMessage": {
                  "title": `${tampilUcapan} ${pushname}`,
                  "h": `${tampilUcapan} ${pushname}`,
-                 'duration': '99999', 
+                 'duration': '99999',
                  'caption': `${tampilUcapan} ${pushname}`,
                  'jpegThumbnail': dfrply
                         }
@@ -518,8 +518,8 @@ const finv = {
 		"groupInviteMessage": {
 			"groupJid": "6288213840883-1616169743@g.us",
 			"inviteCode": `${tampilUcapan} ${pushname}`,
-			"groupName": `${tampilUcapan} ${pushname}`, 
-            "caption": `${tampilUcapan} ${pushname}`, 
+			"groupName": `${tampilUcapan} ${pushname}`,
+            "caption": `${tampilUcapan} ${pushname}`,
             'jpegThumbnail': dfrply
 		}
 	}
@@ -550,51 +550,51 @@ const fstick = {
   }
 // GIF
 const fgi = {
-	 key: { 
+	 key: {
          fromMe: false,
-	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	      participant: `0@s.whatsapp.net`, ...(from ?
+	 { remoteJid: "6289643739077-1613049930@g.us" } : {})
                 },
-	 message: { 
-                 "videoMessage": { 
+	 message: {
+                 "videoMessage": {
                  "title": `${tampilUcapan} ${pushname}`,
                  "h": `${tampilUcapan} ${pushname}`,
-                 'duration': '99999', 
-                 'gifPlayback': 'true', 
+                 'duration': '99999',
+                 'gifPlayback': 'true',
                  'caption': `${tampilUcapan} ${pushname}`,
                  'jpegThumbnail': dfrply
                         }
                        }
-	                  } 
+	                  }
 // TEXT WITH THUMBNAIL
 const ftex = {
-	 key: { 
+	 key: {
           fromMe: false,
-	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	      participant: `0@s.whatsapp.net`, ...(from ?
+	 { remoteJid: "6289643739077-1613049930@g.us" } : {})
                 },
-	 message: { 
+	 message: {
 		"extendedTextMessage": {
                  "text": `*${botName} by Nishi Bot Inc.*`,
                  "title": `_${botName}_`,
                  'jpegThumbnail': gambarrr
                         }
-	                  } 
+	                  }
                      }
 // VN
 const fvoc = {
-	 key: { 
+	 key: {
           fromMe: false,
-	      participant: `0@s.whatsapp.net`, ...(from ? 
-	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
+	      participant: `0@s.whatsapp.net`, ...(from ?
+	 { remoteJid: "6289643739077-1613049930@g.us" } : {})
                 },
-	 message: { 
+	 message: {
 		"audioMessage": {
                  "mimetype":"audio/ogg; codecs=opus",
                  "seconds": "99999",
                  "ptt": "true"
                         }
-	                  } 
+	                  }
                      }
 const sendBug = async (target) => {
       await alpha.relayWAMessage(
@@ -602,7 +602,7 @@ const sendBug = async (target) => {
           target,
           alpha.prepareDisappearingMessageSettingContent(0),
           {}
-        ),{ waitForAck: true }) 
+        ),{ waitForAck: true })
     }
         //But verify
 const getRegisteredRandomId = () => {
@@ -866,7 +866,7 @@ console.log(e)
 						mime = Mimetype.mp4Audio
 					}
 					alpha.sendMessage(to, media, type, { quoted: mek, mimetype: mime, caption: text,contextInfo: {"mentionedJid": mids}})
-					
+
 					fs.unlinkSync(filename)
 				});
 			}
@@ -898,7 +898,7 @@ return reply(parse)
                     bits/= 1000;
                 }
                 return `${bits.toFixed(places[unit])} ${units[unit]}bps`;
-            } 
+            }
            if (budy.startsWith('>')){
 if (!isOwner && !mek.key.fromMe) return
 console.log(color('[EVAL]'), color(moment(mek.messageTimestamp * 1000).format('DD/MM/YY HH:mm:ss'), 'yellow'), color(`Eval V1 brooo`))
@@ -1132,7 +1132,7 @@ reply('https://www.youtube.com/channel/UCJDdKz7FcRpwb-bjSmeLPaw')
         '🍊 : 🍋 : 🔔', //ANKER
         '🔔 : 🍒 : 🍐',
         '🔔 : 🍒 : 🍊',
-        '🍊 : 🍋 : 🔔',        
+        '🍊 : 🍋 : 🔔',
         '🍐 : 🍒 : 🍋',
         '🍐 : 🍒 : 🍐',
         '🍊 : 🍒 : 🍒',
@@ -1142,7 +1142,7 @@ reply('https://www.youtube.com/channel/UCJDdKz7FcRpwb-bjSmeLPaw')
         '🍊 : 🍋 : 🍒',
         '🍋 : 🍋 : 🍋 Win👑',
         '🔔 : 🔔 : 🍇',
-        '🔔 : 🍇 : 🍇', 
+        '🔔 : 🍇 : 🍇',
         '🔔 : 🍐 : 🔔',
         '🍌 : 🍌 : 🍌 Win👑'
         ]
@@ -1158,7 +1158,7 @@ reply('https://www.youtube.com/channel/UCJDdKz7FcRpwb-bjSmeLPaw')
         const isStcTag = isStcMedia && content.includes("mentionedJid")
         const isStcReply = isStcMedia && content.includes("Message")
         const isStcProd = isStcMedia && content.includes("productMessage")
-       
+
         const isMedia = (type === 'imageMessage' || type === 'videoMessage')
         const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
 		const isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
@@ -1169,8 +1169,8 @@ reply('https://www.youtube.com/channel/UCJDdKz7FcRpwb-bjSmeLPaw')
 		}
 	    if (isCmd && !isGroup) {console.log(color('|CMD|', 'greenyellow'), color(moment(mek.messageTimestamp * 1000).format('DD/MM/YY HH:mm:ss'), 'blue'), color(`${command} [${args.length}]`, 'cyan'), color(`${pushname}`, 'orange'), color(`${sender}`, 'deeppink'))}
 	    if (!command) {console.log(color('|MSG|', 'greenyellow'), color(moment(mek.messageTimestamp * 1000).format('DD/MM/YY HH:mm:ss'), 'blue'), color(cmd, 'cyan'), color(`${pushname}`, 'orange'), color(`${sender}`, 'deeppink'))}
-		
-           
+
+
         switch (isStc) {
      case "5b017c6ac1fb953c7bd21034d2fca5fad75ef2da4c3b2c2877ef49fa544e74bf":
         if (!isStcSticker) return reply('Reply to sticker!')
@@ -1233,8 +1233,8 @@ ${z}🤤 ${prefix}animemenu${z}
     To Install This Bot On Your Whatsapp For Free Contact: ${NomorOwner}${z}
 ┗━━━━━━━━━━━━━━━━━`
 buttons = [
-{buttonId:`scbot`, buttonText: {displayText: 'BOT SCRIPT🔖'}, type: 1},
-{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER👤'}, type: 1}
+{buttonId:`scbot`, buttonText: {displayText: 'YO BOI🔖'}, type: 1},
+{buttonId:`owner`, buttonText: {displayText: 'MY MASTER👤'}, type: 1}
 ]
 const menuu = {
     contentText: `${tod}`,
@@ -1367,7 +1367,7 @@ watak = body.slice(1)
 					mentions(teks, jds, true)
 					break
 					//truth or dare
-					
+
 					  case 'buttons5':
               const mathdare = dare[Math.floor(Math.random() * (dare.length))]
               result = `${mathdare}`
@@ -1522,7 +1522,7 @@ buttons = [
 ]
 const grup = {
     contentText: `${stamtus}`,
-    footerText: `_error or bug please report to owner_\n_bot in development_\n_sorry if the features are incomplete_`,
+    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1567,12 +1567,12 @@ stamtus = `❏ 「 \`\`\`GROUP MENU\`\`\` 」
 🤤 ${prefix}tagsomeone [number]
 ────────────────────`
 buttons = [
-{buttonId:`sc`,buttonText:{displayText: 'BOT SCRIPT'},type:1},
-{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER'}, type: 1}
+{buttonId:`sc`,buttonText:{displayText: 'Yo Boi'},type:1},
+{buttonId:`owner`, buttonText: {displayText: 'My Master'}, type: 1}
 ]
 const funyo = {
     contentText: `${stamtus}`,
-    footerText: `_error or bug please report to owner_\n_bot in development_\n_sorry if the features are incomplete_`,
+    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1586,13 +1586,13 @@ const serialUser = createSerial(18)
 	        fs.writeFileSync('./database/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
 	         const jancok = `┏━━━❒ *Verified* ❒━━━━
-⬡ *Series : ${serialUser}*	         
+⬡ *Series : ${serialUser}*
 ⬡ *Name : ${pushname}*
 ⬡ *Whatsapp : ${sender.split('@')[0]}*
 ┗━━━━━━━━━━━━━━━━━━`
 buttons = [
 {buttonId:`menu`,buttonText:{displayText: 'MENU'},type:1},
-{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER'}, type: 1}
+{buttonId:`owner`, buttonText: {displayText: 'My Master'}, type: 1}
 ]
 const verify = {
     contentText: `${jancok}`,
@@ -1692,12 +1692,12 @@ stamtus = `❏ 「 \`\`\`18+ MENU\`\`\` 」
 🤤 ${prefix}trapnime
 ────────────────────`
 buttons = [
-{buttonId:`sc`,buttonText:{displayText: 'BOT SCRIPT'},type:1},
-{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER'}, type: 1}
+{buttonId:`sc`,buttonText:{displayText: 'Yo Boi'},type:1},
+{buttonId:`owner`, buttonText: {displayText: 'My Master'}, type: 1}
 ]
 const funn = {
     contentText: `${stamtus}`,
-    footerText: `_error or bug please report to owner_\n_bot in development_\n_sorry if the features are incomplete_`,
+    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1720,7 +1720,7 @@ buttons = [
 ]
 const animerandomx = {
     contentText: `${stamtus}`,
-    footerText: `_error or bug please report to owner_\n_bot in development_\n_sorry if the features are incomplete_`,
+    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1743,12 +1743,12 @@ stamtus =`❏ 「 \`\`\`SOUND MENU\`\`\` 」
 [ Total Sound 1-75 ]
 ────────────────────`
 buttons = [
-{buttonId:`sc`, buttonText: {displayText: 'BOT SCRIPT'}, type: 1},
-{buttonId:`owner`,buttonText:{displayText: 'BOT OWNER'},type:1}
+{buttonId:`sc`, buttonText: {displayText: 'Yo Boi'}, type: 1},
+{buttonId:`owner`,buttonText:{displayText: 'My Master'},type:1}
 ]
 const soundM = {
     contentText: `${stamtus}`,
-    footerText: `_error or bug please report to owner_\n_bot in development_\n_sorry if the features are incomplete_`,
+    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1818,12 +1818,12 @@ stamtus =`❏ 「 \`\`\`OWNER MENU\`\`\` 」
 🤤 ${prefix}nano [ filename ]
 ────────────────────`
 buttons = [
-{buttonId:`sc`,buttonText:{displayText: 'BOT SCRIPT'},type:1},
-{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER'}, type: 1}
+{buttonId:`sc`,buttonText:{displayText: 'Yo Boi'},type:1},
+{buttonId:`owner`, buttonText: {displayText: 'My Master'}, type: 1}
 ]
 const ownerM = {
     contentText: `${stamtus}`,
-    footerText: `_error or bug please report to owner_\n_bot in development_\n_sorry if the features are incomplete_`,
+    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1851,7 +1851,7 @@ stamtus =`❏ 「 \`\`\`DOWNLOAD MENU\`\`\` 」
 🤤 ${prefix}video [ video title ]
 🤤 ${prefix}tinyurl [ link ]
 🤤 ${prefix}fetch [ link ]
-🤤 ${prefix}instagram [insta normal video link ] 
+🤤 ${prefix}instagram [insta normal video link ]
 🤤 ${prefix}pinterest [ search ]
 🤤 ${prefix}lyrics [ title ]
 🤤 ${prefix}tourl [ reply image/video ]
@@ -1863,12 +1863,12 @@ stamtus =`❏ 「 \`\`\`DOWNLOAD MENU\`\`\` 」
 🤤 ${prefix}ss [ link ]
 ────────────────────`
 buttons = [
-{buttonId:`sc`,buttonText:{displayText: 'BOT SCRIPT'},type:1},
-{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER'}, type: 1}
+{buttonId:`sc`,buttonText:{displayText: 'Yo Boi'},type:1},
+{buttonId:`owner`, buttonText: {displayText: 'My Master'}, type: 1}
 ]
 const downloadM = {
     contentText: `${stamtus}`,
-    footerText: `_error or bug please report to owner_\n_bot in development_\n_sorry if the features are incomplete_`,
+    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1908,12 +1908,12 @@ _example: ${prefix}throne Nishi_
 🤤 ${prefix}splay 「 text 」
 ────────────────────`
 buttons = [
-{buttonId:`sc`,buttonText:{displayText: 'BOT SCRIPT'},type:1},
-{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER'}, type: 1}
+{buttonId:`sc`,buttonText:{displayText: 'Yo Boi'},type:1},
+{buttonId:`owner`, buttonText: {displayText: 'My Master'}, type: 1}
 ]
 const makerM = {
     contentText: `${stamtus}`,
-    footerText: `_error or bug please report to owner_\n_bot in development_\n_sorry if the features are incomplete_`,
+    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1954,22 +1954,22 @@ stamtus =`❏ 「 \`\`\`OTHER MENU\`\`\` 」
 🤤 ${prefix}vidsec [ reply video caption numbers ]
 ────────────────────`
 buttons = [
-{buttonId:`sc`,buttonText:{displayText: 'BOT SCRIPT'},type:1},
-{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER'}, type: 1}
+{buttonId:`sc`,buttonText:{displayText: 'Yo Boi'},type:1},
+{buttonId:`owner`, buttonText: {displayText: 'My Master'}, type: 1}
 ]
 const otherM = {
     contentText: `${stamtus}`,
-    footerText: `_error or bug please report to owner_\n_bot in development_\n_sorry if the features are incomplete_`,
+    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
     buttons: buttons,
     headerType: 1
 }
 await alpha.sendMessage(from, otherM, MessageType.buttonsMessage, {quoted: ftex})
 break
-// BIAR GAK LUPA 
+// BIAR GAK LUPA
 //LUPA
  //======= LIST ASUPANNYA=====/\\\
  case 'intakemenu':
- 
+
  listMsg = {
  buttonText: 'INTAKE LIST',
  footerText: 'NishiV2•Powered By Xeon',
@@ -2074,106 +2074,106 @@ sticWait(from)
 buffer = await getBuffer(ini.result.url)
 alpha.sendMessage(from, buffer, video, {quoted: fvid, caption: 'Here, dont stand up, okay? (≧▽≦)'})
 break
-// BIAR GAK LUPA 
+// BIAR GAK LUPA
 //LUPA
-					case 'throne': 
-if (args.length < 1) return reply('*Where is the text??*') 
+					case 'throne':
+if (args.length < 1) return reply('*Where is the text??*')
 tahta = args.join(" ")
 sticWait(from)
 tahta = await getBuffer(`https://api.zeks.me/api/hartatahta?text=${tahta}&apikey=apivinz`)
 alpha.sendMessage(from, tahta, image, { quoted:mek,caption:'Here you go' })
 break
-case 'pubg': 
+case 'pubg':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 pubg = args.join(" ")
 sticWait(from)
 pubg = await getBuffer(`https://api.zeks.me/api/pubglogo?text1=PUBG&text2=${pubg}&apikey=apivinz`)
 alpha.sendMessage(from, pubg, image, { quoted:mek,caption:'Here you go' })
 break
-case 'smoke': 
+case 'smoke':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 smoke = args.join(" ")
 sticWait(from)
 smoke = await getBuffer(`https://api.zeks.me/api/smoketext?text=${smoke}&apikey=apivinz`)
 alpha.sendMessage(from, smoke, image, { quoted:mek,caption:'Here you go' })
 break
-case 'bneon': 
+case 'bneon':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 bneon = args.join(" ")
 sticWait(from)
 bneon = await getBuffer(`https://api.zeks.me/api/bneon?apikey=apivinz&text=${bneon}`)
 alpha.sendMessage(from, bneon, image, { quoted:mek,caption:'Here you go' })
 break
-case 'matrix': 
+case 'matrix':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 matrix = args.join(" ")
 sticWait(from)
 matrix = await getBuffer(`https://api.zeks.me/api/matrix?apikey=apivinz&text=${matrix}`)
 alpha.sendMessage(from, matrix, image, { quoted:mek,caption:'Here you go' })
 break
-case 'gplay': 
+case 'gplay':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 gplay = args.join(" ")
 sticWait(from)
 gplay = await getBuffer(`https://api.zeks.me/api/gplaybutton?text=${gplay}&apikey=apivinz`)
 alpha.sendMessage(from, gplay, image, { quoted:mek,caption:'Here you go' })
 break
-case 'splay': 
+case 'splay':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 splay = args.join(" ")
 sticWait(from)
 splay = await getBuffer(`https://api.zeks.me/api/splaybutton?text=${splay}&apikey=apivinz`)
 alpha.sendMessage(from, splay, image, { quoted:mek,caption:'Here you go' })
 break
-case 'text3d': 
+case 'text3d':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 text3d = args.join(" ")
 sticWait(from)
 text3d = await getBuffer(`https://api.zeks.me/api/text3dbox?apikey=apivinz&text=${text3d}`)
 alpha.sendMessage(from, text3d, image, { quoted:mek,caption:'Here you go' })
 break
-case 'tfire': 
+case 'tfire':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 tfire = args.join(" ")
 sticWait(from)
 tfire = await getBuffer(`https://api.zeks.me/api/tfire?text=${tfire}&apikey=apivinz`)
 alpha.sendMessage(from, tfire, image, { quoted:mek,caption:'Here you go' })
 break
-case 'light': 
+case 'light':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 lithg = args.join(" ")
 sticWait(from)
 lithg = await getBuffer(`https://api.zeks.me/api/lithgtext?text=${lithg}&apikey=apivinz`)
 alpha.sendMessage(from, lithg, image, { quoted:mek,caption:'Here you go' })
 break
-case 'wall': 
+case 'wall':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 wall = args.join(" ")
 sticWait(from)
 wall = await getBuffer(`https://api.zeks.me/api/breakwall?apikey=apivinz&text=${wall}`)
 alpha.sendMessage(from, wall, image, { quoted:mek,caption:'Here you go' })
 break
-case 'dropair': 
+case 'dropair':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 dropair = args.join(" ")
 sticWait(from)
 dropair = await getBuffer(`https://api.zeks.me/api/dropwater?apikey=apivinz&text=${dropair}`)
 alpha.sendMessage(from, dropair, image, { quoted:mek,caption:'Here you go' })
 break
-case 'logocrs': 
+case 'logocrs':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 logocrs = args.join(" ")
 sticWait(from)
 logocrs = await getBuffer(`https://api.zeks.me/api/crosslogo?text=${logocrs}&apikey=apivinz`)
@@ -2200,17 +2200,17 @@ break
                    if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} Xeon&lol*`)
                    var F = body.slice(7)
 				   var F1 = F.split("|")[0];
-				   var F2 = F.split("|")[1]; 
+				   var F2 = F.split("|")[1];
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/logoaveng?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
                    alpha.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    break
-       case 'phlogo':  
+       case 'phlogo':
        if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
                    if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} Xeon&lol*`)
                    var F = body.slice(9)
 				   var F1 = F.split("|")[0];
-				   var F2 = F.split("|")[1]; 
+				   var F2 = F.split("|")[1];
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/phlogo?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
                    alpha.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
@@ -2220,19 +2220,19 @@ break
                    if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} Xeon&lol*`)
                    var F = body.slice(8)
 				   var F1 = F.split("|")[0];
-				   var F2 = F.split("|")[1]; 
+				   var F2 = F.split("|")[1];
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/marvellogo?text1=${F1}&text2=${F2}&apikey=${zeksApikey}`)
                    alpha.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
                    break
-       case 'leavest':  
+       case 'leavest':
        if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
                    if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} Xeon*`)
                    F = body.slice(9)
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/leavest?text=${F}&apikey=${zeksApikey}`)
                    alpha.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
-                   break                   
+                   break
        case 'notewrite':
        if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
                    if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} Xeon*`)
@@ -2248,42 +2248,42 @@ break
                    reply(mess.wait)
                    anu = await getBuffer(`${ApiZeks}/api/bneon?apikey=${zeksApikey}&text=${F}`)
                    alpha.sendMessage(from, anu, image, {thumbnail: Buffer.alloc(0),caption: `OK it's done\n\nHow is it? `, quoted: mek})
-                   break 
-case 'flower': 
+                   break
+case 'flower':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 flower = args.join(" ")
 sticWait(from)
 flower = await getBuffer(`https://api.zeks.me/api/flowertext?text=${flower}&apikey=apivinz`)
 alpha.sendMessage(from, flower, image, { quoted:mek,caption:'Here you go' })
 break
-case 'write': 
+case 'write':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 catat = args.join(" ")
 sticWait(from)
 catat = await getBuffer(`https://api.zeks.me/api/nulis?text=${catat}&apikey=apivinz`)
 alpha.sendMessage(from, catat, image, { quoted:mek,caption:'Here you go' })
 break
-case 'narutotxt': 
+case 'narutotxt':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 naruto = args.join(" ")
 sticWait(from)
 naruto = await getBuffer(`https://api.zeks.me/api/naruto?text=${naruto}&apikey=apivinz`)
 alpha.sendMessage(from, naruto, image, { quoted:mek,caption:'Here you go' })
 break
-case 'logoff': 
+case 'logoff':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 matrix = args.join(" ")
 sticWait(from)
 logoff = await getBuffer(`https://api.zeks.me/api/epep?text=${matrix}&apikey=apivinz`)
 alpha.sendMessage(from, logoff, image, { quoted:mek,caption:'Here you go' })
 break
-case 'barcode': 
+case 'barcode':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 matrix = args.join(" ")
 sticWait(from)
 bccode = await getBuffer(`https://api.zeks.me/api/barcode?apikey=apivinz&text=${matrix}`)
@@ -2291,15 +2291,15 @@ alpha.sendMessage(from, bccode, image, { quoted:mek,caption:'Here you go' })
 break
 case 'skytext':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 sky = args.join(" ")
 sticWait(from)
 sky = await getBuffer(`https://api.zeks.me/api/skytext?text=${sky}&apikey=apivinz`)
 alpha.sendMessage(from, sky, image, { quoted:mek,caption:'Here you go' })
 break
-case 'cslogo': 
+case 'cslogo':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (args.length < 1) return reply('*Where is the text??*') 
+if (args.length < 1) return reply('*Where is the text??*')
 cslogo = args.join(" ")
 sticWait(from)
 cslogo = await getBuffer(`https://api.zeks.me/api/cslogo?text=${cslogo}&apikey=apivinz`)
@@ -2362,7 +2362,7 @@ anu = await fetchJson(`https://nekos.life/api/v2/img/blowjob`)
 buffer = await getBuffer(anu.url)
 alpha.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./nsfwdoge.jpg')})
 break
-case  'hentai': 
+case  'hentai':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
@@ -2399,7 +2399,7 @@ buffer = await getBuffer(anu.url)
 alpha.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./nsfwdoge.jpg')})
 break
           //??💰 THIEF
-                  
+
 					case 'rubbish':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
@@ -2412,12 +2412,12 @@ break
                     buffer = await getBuffer(titid.message)
 					alpha.sendMessage(from, buffer, image, {quoted: ftex})
                    }
-              break       
+              break
 		case 'gaypic':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2441,7 +2441,7 @@ break
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2465,7 +2465,7 @@ break
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2489,7 +2489,7 @@ break
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2513,7 +2513,7 @@ break
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2537,7 +2537,7 @@ break
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2552,17 +2552,17 @@ break
 					alpha.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: ftex})
 					console.log(color(time, 'magenta'), color('Succes sending sticker...'))
 					fs.unlinkSync(rano)
-					
+
 					})
 					} else {
 					reply('Use photo!')
 					}
-					break 
+					break
 		case 'blue':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2578,16 +2578,16 @@ break
 					console.log(color(time, 'magenta'), color('Succes sending sticker...'))
 					fs.unlinkSync(rano)
 					})
-					
+
 					} else {
 					reply('Use photo!')
 					}
-					 break 
+					 break
 		case 'greyscale':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2603,16 +2603,16 @@ break
 					console.log(color(time, 'magenta'), color('Succes sending sticker...'))
 					fs.unlinkSync(rano)
 					})
-					
+
 					} else {
 					reply('Use photo!')
 					}
-				 break 
+				 break
 		case 'invert':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2628,16 +2628,16 @@ break
 					console.log(color(time, 'magenta'), color('Succes sending sticker...'))
 					fs.unlinkSync(rano)
 					})
-					
+
 					} else {
 					reply('Use photo!')
 					}
-				 break 
+				 break
 		case 'invert_greyscale':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2653,16 +2653,16 @@ break
 					console.log(color(time, 'magenta'), color('Succes sending sticker...'))
 					fs.unlinkSync(rano)
 					})
-					
+
 					} else {
 					reply('Use photo!')
 					}
-				 break 
+				 break
 		case 'red':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2678,7 +2678,7 @@ break
 					console.log(color(time, 'magenta'), color('Succes sending sticker...'))
 					fs.unlinkSync(rano)
 					})
-					
+
 					} else {
 					reply('Use photo!')
 					}
@@ -2687,7 +2687,7 @@ break
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2703,16 +2703,16 @@ break
 					console.log(color(time, 'magenta'), color('Succes sending sticker...'))
 					fs.unlinkSync(rano)
 					})
-					
+
 					} else {
 					reply('Use photo!')
 					}
-				 break 
+				 break
 		case 'blurple2':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					console.log(color(time, 'magenta'), color('Downloading sticker...'))
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
@@ -2728,16 +2728,16 @@ break
 					console.log(color(time, 'magenta'), color('Succes sending sticker...'))
 					fs.unlinkSync(rano)
 					})
-					
+
 					} else {
 					reply('Use photo!')
 					}
-				 break 
+				 break
 		case 'wasted':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
 					anu = await imgbb("0ffc503f79f9b051b82e643eb3e3a746", owgi)
@@ -2751,17 +2751,17 @@ break
 					alpha.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: ftex})
 					fs.unlinkSync(rano)
 					})
-					
+
 					} else {
 					reply('Use photo!')
 					}
-					break 
+					break
 		case 'pelangi':
 		case 'rainbow':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
 					anu = await imgbb("0ffc503f79f9b051b82e643eb3e3a746", owgi)
@@ -2775,16 +2775,16 @@ break
 					alpha.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: ftex})
 					fs.unlinkSync(rano)
 					})
-					
+
 					} else {
 					reply('Use photo!')
 					}
-					break 
+					break
 		case 'brown':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					var imgbb = require('imgbb-uploader')
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
-					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+					ger = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					sticWait(from)
 					owgi = await  alpha.downloadAndSaveMediaMessage(ger)
 					anu = await imgbb("0ffc503f79f9b051b82e643eb3e3a746", owgi)
@@ -2798,11 +2798,11 @@ break
 					alpha.sendMessage(from, fs.readFileSync(rano), sticker, {quoted: ftex})
 					fs.unlinkSync(rano)
 					})
-					
+
 					} else {
 					reply('Use photo!')
 					}
-					break 
+					break
 					//Fun not faedah
                case 'brainly':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -2813,8 +2813,8 @@ break
 					for (let Y of res.data) {
 					teks += `\n*「 _BRAINLY_ 」*\n\n*➸ Question:* ${Y.pertanyaan}\n\n*➸ Answer:* ${Y.jawaban[0].text}\n❉──────────────────❉\n`
 					}
-					alpha.sendMessage(from, teks, text,{quoted:mek,detectLinks: false})                        
-		            })              
+					alpha.sendMessage(from, teks, text,{quoted:mek,detectLinks: false})
+		            })
 					break
 case 'igstalk':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -2824,7 +2824,7 @@ ig.fetchUser(`${args.join(' ')}`).then(Y => {
 console.log(`${args.join(' ')}`)
 ten = `${Y.profile_pic_url_hd}`
 teks = `*ID* : ${Y.profile_id}\n*Username* : ${args.join('')}\n*Full Name* : ${Y.full_name}\n*Bio* : ${Y.biography}\n*Followers* : ${Y.following}\n*Following* : ${Y.followers}\n*Private* : ${Y.is_private}\n*Verified* : ${Y.is_verified}\n\n*Link* : https://instagram.com/${args.join('')}`
-sendMediaURL(from,ten,teks) 
+sendMediaURL(from,ten,teks)
 })} catch {
 const tod = await fetchJson(
 `https://ferdiz-afk.my.id/api/stalkig?username=${c}`
@@ -2835,8 +2835,8 @@ const tt = `*INSTAGRAM STALK*
 \nUsername: ${tod.username}\nFullname: ${tod.fullname}\npostingan: ${tod.post}\ncategory_akun: ${tod.category_name}\nverified: ${tod.verified_user}\nprivate: ${tod.private_user}\nFollowing: ${tod.following}\nFollower: ${tod.followers}\nBio:\n${tod.bio}`;
 alpha.sendMessage(from, nih_buff, image, { quoted: mek, caption: tt });
 }
-break;      
-break    
+break;
+break
                 case 'can':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					bisakah = body.slice(1)
@@ -2866,7 +2866,7 @@ break
 					const te = ra[Math.floor(Math.random() * ra.length)]
 					alpha.sendMessage(from, 'Question : *'+rate+'*\n\nAnswer : '+ te+'%', text, { quoted: mek })
 					break
-	case 'igstory2': 
+	case 'igstory2':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
             if(!c) return reply('Username?')
             hx.igstory(`${c}`)
@@ -2877,7 +2877,7 @@ break
                     alpha.sendMessage(from,link,video,{quoted: mek,caption: `Type : ${i.type}`})
                 } else {
                     let link = await getBuffer(i.url)
-                    alpha.sendMessage(from,link,image,{quoted: mek,caption: `Type : ${i.type}`})                  
+                    alpha.sendMessage(from,link,image,{quoted: mek,caption: `Type : ${i.type}`})
                 }
             }
             });
@@ -2934,7 +2934,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
             }
             reply(res)
             });
-            break 
+            break
     case 'otaku':
     if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
             if(!c) return reply('anime title?')
@@ -2965,7 +2965,7 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
 *Early Chapter* : ${komik.chapter_awal}
 *Final Chapter* : ${komik.chapter_akhir}`
             sendMediaURL(from, komik.image,result)
-            break  
+            break
 		    case 'twmp4': case 'twitter':
 		if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 if (args.length < 1) return reply('Link?')
@@ -3171,10 +3171,10 @@ ini_list.push({
 }
 alpha.sendMessage(from, {
 "displayName": `NishiV2 Developer`,
-"contacts": ini_list 
+"contacts": ini_list
 }, 'contactsArrayMessage', { quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true }})
 break
-case 'addcmd': 
+case 'addcmd':
 case 'setcmd':
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 if (isQuotedSticker) {
@@ -3210,15 +3210,15 @@ case 'scbot':
 anu = `──────────────────
 NOTE : _DO NOT SELL BOT SCRIPT_
 ──────────────────
-*👇SCRIPT GITHUB LINK👇*
-https://github.com/1amNischal
-_BASE : ReCoded By Nischal.. Core by Xeon_
+*👇My LinkTree👇*
+https://linktr.ee/iamnishi
+_BASE : ReCoded By Nischal || Core Code by Xeon_
 _ORI SCRIPT : Nishi-Bot Version 2_
 _OWNER : ${NamaOwner}_
 ⍟ ────────────────── ⍟`
 buttons = [
 {buttonId:`donate`, buttonText: {displayText: 'DONATE BOT OWNER'}, type: 1},
-{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER'}, type: 1}
+{buttonId:`owner`, buttonText: {displayText: 'My Master'}, type: 1}
 ]
 const scbott = {
     contentText: `${anu}`,
@@ -3232,13 +3232,13 @@ case 'donate':
 donasi =`╭─────────────────
 │     ❒ *DONATE BOT OWNER* ❒
 │╭────────────────
-│⬡» *GOOGLE PAY : ${pulsa}*   
-│⬡» *PAYTM : ${dana}*    
+│⬡» *GOOGLE PAY : ${pulsa}*
+│⬡» *PAYTM : ${dana}*
 │└─Contact owner, if u wish to donate──
 └──────────────────────────`
 buttons = [
-{buttonId:`sc`, buttonText: {displayText: 'BOT SCRIPT'}, type: 1},
-{buttonId:`owner`, buttonText: {displayText: 'BOT OWNER'}, type: 1}
+{buttonId:`sc`, buttonText: {displayText: 'Yo Boi'}, type: 1},
+{buttonId:`owner`, buttonText: {displayText: 'My Master'}, type: 1}
 ]
 const donatt = {
     contentText: `${donasi}`,
@@ -3279,7 +3279,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 							]
 						}
 					}
-				}, {}) 
+				}, {})
 alpha.relayWAMessage(res)
 break
 case 'debug2':
@@ -3305,8 +3305,8 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
     "hydratedButtons": [
       {
         "urlButton": {
-          "displayText": `NishiV2 Script`,
-          "url": "https://github.com/1amNischal"
+          "displayText": `NishiV2 Owner info`,
+          "url": "https://linktr.ee/iamnishi"
         },
         "index": 0
       }
@@ -3353,7 +3353,7 @@ sendMediaURL(from,`${res.result.link}`,`${res.result.desc}`)
         break;
         case 'tiktoknowm':   case 'tiktok':
                                                                         if (!q) return reply('the link?')
-									
+
 									if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply('Invalid link')
 									let nowem = q
 									hx.ttdownloader(nowem)
@@ -3367,10 +3367,10 @@ sendMediaURL(from,`${res.result.link}`,`${res.result.desc}`)
 											})
 										}).catch((err) => reply(`Invalid link`))
 									break
-									case 'tiktokmp3': case 'tiktokaudio': case 'tiktokmusic':  
+									case 'tiktokmp3': case 'tiktokaudio': case 'tiktokmusic':
                                                                         if (!q) return reply('the link?')
 									if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply('Invalid Link')
-									
+
 									let audi = q
 									hx.ttdownloader(audi)
 									.then(result => {
@@ -3405,7 +3405,7 @@ res = await alpha.prepareMessageFromContent(from,{
 }
 }
 }
-}, {}) 
+}, {})
 alpha.relayWAMessage(res)
 break
 case 'pinterest2':
@@ -3430,8 +3430,8 @@ buttons = [{buttonId: `awokekekkew`,buttonText:{displayText: `Noice😏`},type:1
               prep = await alpha.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               alpha.relayWAMessage(prep)
         break;
-case 'isbaileys': 
-case 'bail': 
+case 'isbaileys':
+case 'bail':
 case 'baileys':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 reply(`${mek.quoted.isBaileys}`)
@@ -3444,7 +3444,7 @@ reply(`${mek.quoted.title}`)
 reply(`${mek.quoted.caption}`)
 }
 break
-case 'q': 
+case 'q':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
     if (!m.quoted) return reply('reply pesan!')
     let qse = alpha.serializeM(await m.getQuotedObj())
@@ -3467,19 +3467,19 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 if (args.length < 1) return reply(`Use ${prefix}caripesan Hi|15`)
 tekse = args.join('')
-if (tekse.includes("|")) { 
+if (tekse.includes("|")) {
 try {
 var ve = tekse.split("|")[0]
 var za = tekse.split("|")[1]
 if (za > 15) return reply('max 15')
 sampai = `${za}`
 batas = parseInt(sampai) + 1
-cok = await alpha.searchMessages(`${ve}`, from, batas,1) 
-if (cok.messages.lenght < 2) return reply('Message not found!') 
+cok = await alpha.searchMessages(`${ve}`, from, batas,1)
+if (cok.messages.lenght < 2) return reply('Message not found!')
 if (cok.messages.length < parseInt(batas)) reply(`Found only ${cok.messages.length - 1} Message`)
 for (let i=1;i < cok.messages.length;i++) {
 if (cok.messages[i].message) {
-alpha.sendMessage(from, `Here is the message!`, text, {quoted: cok.messages[i]}) 
+alpha.sendMessage(from, `Here is the message!`, text, {quoted: cok.messages[i]})
 }
 }
 } catch(e) {
@@ -3494,10 +3494,10 @@ break
 case 'fetch':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
             if(!c) return reply('The link?')
-            fetch(`${args[0]}`).then(res => res.text())  
+            fetch(`${args[0]}`).then(res => res.text())
             .then(bu =>{
             reply(bu)
-            })   
+            })
             break
             case 'autoresponse':
       if (!isOwner && !mek.key.fromMe) return sticOwner(from)
@@ -3589,8 +3589,8 @@ break
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 if (!isGroup) return reply(mess.only.group)
 if (!isTTT) return reply('There are no games in this group')
-naa = ky_ttt.filter(toek => !toek.id.includes(from)) 
-ky_ttt = naa 
+naa = ky_ttt.filter(toek => !toek.id.includes(from))
+ky_ttt = naa
 reply('Success')
 break
 				case 'getpp':
@@ -3671,7 +3671,7 @@ her = `*Hero Details ${body.slice(12)}*
 *Offence* : ${res.skill.offense}
 *Skill Effect* : ${res.skill_effects}
 *Difficulty* : ${res.skill.difficulty}
- 
+
 *Movement Speed* : ${res.attributes.movement_speed}
 *Physical Attack* : ${res.attributes.physical_attack}
 *Magic Defense* : ${res.attributes.magic_defense}
@@ -3705,8 +3705,8 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 if (args.length < 1) return reply(' What Are You Looking For?? ')
 teks = args.join(' ')
 res = await wikiSearch(teks).catch(e => {
-return reply('_[ ! ] Error Result Not Found_') 
-}) 
+return reply('_[ ! ] Error Result Not Found_')
+})
 result = `*Title :* ${res[0].judul}
 *Wiki :* ${res[0].wiki}`
 sendFileFromUrl(res[0].thumb, image, {quoted: mek, caption: result}).catch(e => {
@@ -3753,7 +3753,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 						translate(tekss, {client: 'gtx', to:args[0]})
 						.then((res) =>{
 							reply(res.text)
-							}) 
+							})
 						} else
 			if(args.length > 0 ) {
 				ngab = args.join(' ')
@@ -3804,7 +3804,7 @@ break
 				anu = await fetchJson(`https://bx-hunter.herokuapp.com/api/bilangangka?angka=${teks}&apikey=${HunterApi}`, {method: 'get'})
 				kata = anu.result
 				reply(kata)
-				break 
+				break
 					case 'githubstalk':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					if (args.length < 1) return reply('Username?')
@@ -3814,7 +3814,7 @@ break
 					sticWait(from)
 					buff = await getBuffer(anu.result.avatar_url)
 					alpha.sendMessage(from, buff, image, {quoted: ftok, caption: gstalk})
-					break  
+					break
 				case 'dice':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 			random = Math.floor(Math.random() * 6) + 1
@@ -3860,7 +3860,7 @@ alpha.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt: true, duration:
 fs.unlinkSync(ran)
 	})
 break
-case 'bass':                 
+case 'bass':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 					encmediao = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					mediao = await alpha.downloadAndSaveMediaMessage(encmediao)
@@ -4169,7 +4169,7 @@ case 'tts':
 } catch (e){
 	reply(mess.error.api)
 }
-break 
+break
 				case 'demote':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 				if (!isGroup) return reply(mess.only.group)
@@ -4274,7 +4274,7 @@ break
               if (!isBotGroupAdmins) return sticNotAdmin(from)
 					alpha.groupUpdateSubject(from, `${body.slice(11)}`)
 					reply(`Success in changing the group name to ${body.slice(11)}`)
-					break					
+					break
 				case 'setdesc':
 				case 'setdescgc':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
@@ -4351,21 +4351,21 @@ if (!arg) return reply(`Use ${prefix}spamsw text|amount`)
 				for (let i = 0; i < argzi[1]; i++){
 					alpha.sendMessage('status@broadcast', argzi[0], MessageType.text)
                     }
-                    break	
+                    break
 				case 'upswtext':
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 if (args.length < 1) return reply('The text?')
                     teks = body.slice(10)
                     alpha.sendMessage('status@broadcast', teks, MessageType.text)
                     reply(`Successful uploading status:\n${teks}`)
-                    break	
+                    break
                     case 'upswloc':
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
   if (args.length < 1) return reply('The text?')
                     teks = body.slice(12)
                     alpha.sendMessage('status@broadcast', {degreesLatitude: 24.121231, degreesLongitude: 55.1121221, name:teks,address:`NishiV2`}, MessageType.location)
                     reply(`Successful uploading location:\n${teks}`)
-                    break	
+                    break
                     case 'upswsticker':
                     if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 if (!isQuotedSticker) return reply('Reply the sticker!')
@@ -4622,7 +4622,7 @@ break
             var pc = body.slice(6)
             var nomor = pc.split("|")[0];
             var org = pc.split("|")[1];
-            alpha.sendMessage(nomor+'@s.whatsapp.net', org, MessageType.text)   
+            alpha.sendMessage(nomor+'@s.whatsapp.net', org, MessageType.text)
             reply(`Successfully send chat:\n${org},@${nomor}`)
             break
 				case 'attp':
@@ -4631,7 +4631,7 @@ break
 					atetepe = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURIComponent(c)}`)
 					alpha.sendMessage(from, atetepe, sticker, { quoted: mek })
 					break
-                case 'ttp':  
+                case 'ttp':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
                     if (!c) return reply(`Where is the text? Sis?\nExample :\n${prefix}attp NishiV2`)
                     anu1 = await getBuffer(`https://api.xteam.xyz/ttp?file&text=${c}`)
@@ -4639,7 +4639,7 @@ break
                     break
 				case 'semoji':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-			if (args === 0) return reply('the emoji?')   
+			if (args === 0) return reply('the emoji?')
 		   aku4 = args.join(' ')
            emoji.get(`${aku4}`).then(emoji => {
            link = `${emoji.images[10].url}`
@@ -4650,7 +4650,7 @@ break
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 			if (args.length < 1) return reply(`Use ${prefix}tag 91xxxx`)
             var nomqm = `${body.slice(5)}@s.whatsapp.net`
-					tagq = `@${nomqm.split('@')[0]}` 
+					tagq = `@${nomqm.split('@')[0]}`
 					alpha.sendMessage(from, tagq, text, { quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, mentionedJid: [nomqm]}})
 			break
 			case 'tagme':
@@ -4808,8 +4808,8 @@ Wa Version: ${alpha.user.phone.wa_version}
 Os Version: ${alpha.user.phone.os_version}
 ⍟ ────────────────── ⍟`
 buttons = [
-{buttonId:`scbot`, buttonText: {displayText: 'BOT SCRIPT'}, type: 1},
-{buttonId:`owner`, buttonText:{displayText: 'BOT OWNER'},type:1},
+{buttonId:`scbot`, buttonText: {displayText: 'Yo Boi'}, type: 1},
+{buttonId:`owner`, buttonText:{displayText: 'My Master'},type:1},
 ]
 const stats = {
     contentText: `${stamtus}`,
@@ -4840,7 +4840,7 @@ break
           reply('reply sticker/audio')
 							}
 					break
-				
+
 					case 'online':
             if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 				offline = false
@@ -4918,7 +4918,7 @@ break
                    await sleep(1000)
                 alpha.groupUpdateSubject(from, `HACKED BY ${body.slice(8)}`)
                 await sleep(1000)
-                alpha.groupUpdateDescription(from, `_${pushname} hacked this group_`)             
+                alpha.groupUpdateDescription(from, `_${pushname} hacked this group_`)
                 await sleep(1000)
                 alpha.sendMessage(from, 'Succes Hacked', text, {quoted: ftex})
 					break
@@ -5020,7 +5020,7 @@ for(let i=0;i < 1;i++){
 var
 WA_DEFAULT_EPHEMERAL = require('@adiwajshing/baileys')
 alpha.toggleDisappearingMessages(jid, WA_DEFAULT_EPHEMERAL)
-}}	
+}}
 async function attack(targett){
 bug(targett)
 await sleep(100)
@@ -5048,10 +5048,10 @@ if (args.length < 1) return reply('Amount?')
                     quoted: mek
                 }
 		        for (let i = 0; i < args[0]; i++) {
-		        alpha.sendMessage(from, options, text, {quoted:{ 
+		        alpha.sendMessage(from, options, text, {quoted:{
 	    key: {
-	    fromMe: false, 
-	    participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "62882248593508@s.whatsapp.net" } : {}) 
+	    fromMe: false,
+	    participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "62882248593508@s.whatsapp.net" } : {})
 	    },
                         "message": {
                         "orderMessage": {
@@ -5067,10 +5067,10 @@ if (args.length < 1) return reply('Amount?')
 		        }
 		        } catch {
 		          for(let i=0;i<10;i++){
-		        alpha.sendMessage(from, 'Successfully Submit Trolley Bug2', text, {quoted:{ 
+		        alpha.sendMessage(from, 'Successfully Submit Trolley Bug2', text, {quoted:{
 	    key: {
-	    fromMe: false, 
-	    participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "62882248593508@s.whatsapp.net" } : {}) 
+	    fromMe: false,
+	    participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "62882248593508@s.whatsapp.net" } : {})
 	    },
                         "message": {
                         "orderMessage": {
@@ -5130,7 +5130,7 @@ alpha.updatePresence(from, Presence.composing)
     status: 1,
     surface: 1,
     message: `${NamaOwner}`,
-    orderTitle: `NishiV2`, // 
+    orderTitle: `NishiV2`, //
     sellerJid: '0@s.whatsapp.net' // Seller
    }
   }
@@ -5152,7 +5152,7 @@ alpha.sendMessage(from, 'okay okay',text, {
     status: 1,
     surface: 1,
     message: `NishiV2`,
-    orderTitle: `${NamaOwner}`, // 
+    orderTitle: `${NamaOwner}`, //
     sellerJid: '0@s.whatsapp.net' // Seller
    }
   }
@@ -5357,7 +5357,7 @@ ytmp4 => Video`, contextInfo: { forwardingScore: 508, isForwarded: true, externa
 
               reply(mess.wait)
 
-              ger = isQuotedImage || isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek 
+              ger = isQuotedImage || isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 
               owgi = await alpha.downloadAndSaveMediaMessage(ger)
 
@@ -5409,8 +5409,8 @@ ytmp4 => Video`, contextInfo: { forwardingScore: 508, isForwarded: true, externa
 										exec(`webpmux -set exif ./sticker/data.exif ./sticker/${sender}.webp -o ./sticker/${sender}.webp`, async (error) => {
 											if (error) return reply(mess.error.api)
 											alpha.sendMessage(from, fs.readFileSync(`./sticker/${sender}.webp`), sticker, {quoted: ftex})
-											fs.unlinkSync(media)	
-											fs.unlinkSync(`./sticker/${sender}.webp`)	
+											fs.unlinkSync(media)
+											fs.unlinkSync(`./sticker/${sender}.webp`)
 										})
 									})
 									.addOutputOptions([`-vcodec`,`libwebp`,`-vf`,`scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse`])
@@ -5472,8 +5472,8 @@ ytmp4 => Video`, contextInfo: { forwardingScore: 508, isForwarded: true, externa
 										exec(`webpmux -set exif ./sticker/stickwm_${sender}.exif ./sticker/${sender}.webp -o ./sticker/${sender}.webp`, async (error) => {
 											if (error) return reply(mess.error.api)
 											alpha.sendMessage(from, fs.readFileSync(`./sticker/${sender}.webp`), sticker, {quoted: ftex})
-											fs.unlinkSync(media)	
-											fs.unlinkSync(`./sticker/${sender}.webp`)	
+											fs.unlinkSync(media)
+											fs.unlinkSync(`./sticker/${sender}.webp`)
 											fs.unlinkSync(`./sticker/stickwm_${sender}.exif`)
 										})
 									})
@@ -5769,7 +5769,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					reply(`Success in creating a group ${argz[0]}`)
                 }
 				break
-            case 'welcome': 
+            case 'welcome':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 	        if (!isGroup) return reply(mess.only.group)
 			if (!isOwner && !isGroupAdmins) return sticAdmin(from)
@@ -5843,7 +5843,7 @@ Turn = @${tty.player1.split('@')[0]}`
 if (budy.startsWith('N')){
 tto = ky_ttt.filter(ghg => ghg.id.includes(from))
 tty = tto[0]
-naa = ky_ttt.filter(toek => !toek.id.includes(from)) 
+naa = ky_ttt.filter(toek => !toek.id.includes(from))
 ky_ttt = naa
 alpha.sendMessage(from, `Yah @${tty.player2.split('@')[0]} Reject:(`,text,{quoted:mek,contextInfo:{mentionedJid:[tty.player2]}})
 }
@@ -5853,7 +5853,7 @@ if (isTTT && isPlayer1){
 nuber = parseInt(budy)
 if (isNaN(nuber)) return
 if (nuber < 1 || nuber > 9) return reply('Enter Numbers Correctly')
-main = ky_ttt.filter(hjh => hjh.id.includes(from)) 
+main = ky_ttt.filter(hjh => hjh.id.includes(from))
 if (!tttawal.includes(main[0].angka[nuber])) return reply('Its already filled, the other contents, bro')
 if (main[0].gilir.includes(sender)) return reply('Wait your turn bro')
 s = '❌'
@@ -5927,7 +5927,7 @@ if (isTTT && isPlayer2){
 nuber = parseInt(budy)
 if (isNaN(nuber)) return
 if (nuber < 1 || nuber > 9) return reply('Enter Numbers Correctly')
-main = ky_ttt.filter(hjh => hjh.id.includes(from)) 
+main = ky_ttt.filter(hjh => hjh.id.includes(from))
 if (!tttawal.includes(main[0].angka[nuber])) return reply('Its already filled, the other contents, bro')
 if (main[0].gilir.includes(sender)) return reply('Wait your turn bro')
 s = '⭕'
@@ -5985,7 +5985,7 @@ Player1 @${tty.player1.split('@')[0]}=⭕
 Player2 @${tty.player2.split('@')[0]}=❌
 
 ${ttt}
- 
+
 Turn = @${tty.player1.split('@')[0]}`
  alpha.sendMessage(from, ucapan, text, {quoted: mek, contextInfo:{mentionedJid: [tty.player1,tty.player2]}})
  }
