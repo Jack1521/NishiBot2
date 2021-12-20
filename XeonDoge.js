@@ -1686,7 +1686,7 @@ case 'listmenu':
                            },
                            {
                               "title": "DownloadMenu",
-															"rowId": "⬇️HomeMade Downloader for most of the platforms",
+															"description": "⬇️HomeMade Downloader for most of the platforms",
                               "rowId": ""
                            }
                         ]
