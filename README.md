@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i.ibb.co/LPbHTfL/nsfwdoge.jpg?format=jpg&name=900x900" alt="Xeon" width="170" />
+<img src="https://i.ibb.co/VC5Dk40/NishiV2.jpg?format=jpg&name=900x900" alt="Xeon" width="170" />
 
 ## Doge Bot V2
 
@@ -16,7 +16,7 @@
 </p>
 
 ## Deploy (you can use this button either)
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DGXeon/Botv2Test/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/1amNischal/NishiBot2/)
 
 # Requirements
 * [Node.js](https://nodejs.org/en/)
