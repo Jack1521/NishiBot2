@@ -1681,7 +1681,8 @@ case 'listmenu':
                            },
                            {
                               "title": "OtherMenu",
-                              "rowId": "🧠Interesting Menu"
+															"description": "🧠Interesting Menu",
+                              "rowId": ""
                            },
                            {
                               "title": "DownloadMenu",
