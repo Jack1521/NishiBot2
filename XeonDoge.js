@@ -1612,7 +1612,7 @@ case 'listmenu':
  description: `_*Yo Boi, Choose The Menu from The list Below!*_`,
  sections: [
                      {
-                      "header": {"text":"NishiV2"},
+                      "title": `NishiV2`,
  rows: [
                           {
                               "title": "SellBot",
