@@ -1,5 +1,5 @@
-//-----(Doge Bot by Xeon Bot Inc.)-----\\
-//-----(Youtube Channel: Xeon)-----\\
+//-----(Doge Bot Core Skrypt by Xeon.)-----\\
+//-----(Modified and ReBuilt By Nischal)-----\\
 //-----(Whatsapp number: +918919822103)-----\\
 //-----(Wanna reupload??? Can, but give proper credit)----\\
 
@@ -953,18 +953,18 @@ reply(String(e))
 }
 }
 			// AUTO
-			for (let anji of setik){
-				if (budy === anji){
-					result = fs.readFileSync(`./media/sticker/${anji}.webp`)
-					alpha.sendMessage(from, result, sticker, { quoted: mek})
-					}
-			}
-			for (let anju of vien){
-				if (budy === anju){
-					result = fs.readFileSync(`./media/vn/${anju}.mp3`)
-					alpha.sendMessage(from, result, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek})
-					}
-			}
+			// for (let anji of setik){
+			// 	if (budy === anji){
+			// 		result = fs.readFileSync(`./media/sticker/${anji}.webp`)
+			// 		alpha.sendMessage(from, result, sticker, { quoted: mek})
+			// 		}
+			// }
+			// for (let anju of vien){
+			// 	if (budy === anju){
+			// 		result = fs.readFileSync(`./media/vn/${anju}.mp3`)
+			// 		alpha.sendMessage(from, result, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek})
+			// 		}
+			// }
 			for (let anjh of imagi){
 				if (budy === anjh){
 					result = fs.readFileSync(`./media/image/${anjh}.jpg`)
@@ -1212,9 +1212,9 @@ quotesnya = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=K
 quotes = quotesnya.result.quote
 by = quotesnya.result.by
 tod = `┏━━━━━━━━━━━━━━━━━━━━
-⬡ ${z}Bot name : ${botName}${z}
-⬡ ${z}Owner Name : ${NamaOwner}${z}
-⬡ ${z}Owner Number : ${NomorOwner}${z}
+⬡ ${z}My Name is ${botName}${z}
+⬡ ${z}I was Create By ${NamaOwner}${z}
+⬡ ${z}My Masters Number ${NomorOwner}${z}
 ┗━━━━━━━━━━━━━━━━━━`
 tod2 =`┏━━━❒ *MENU LIST*
 ${z}🤤 ${prefix}soundmenu${z}
@@ -1624,11 +1624,11 @@ case 'listmenu':
 															"description": "⚡Speed Of The Bot⚡",
                               "rowId": ""
                            },
-                           {
-                              "title": "SoundMenu",
-															"description": "🎶Prebuilt Sounds",
-                              "rowId": ""
-                           },
+                           // {
+                           //    "title": "SoundMenu",
+														// 	"description": "🎶Prebuilt Sounds",
+                           //    "rowId": ""
+                           // },
                            {
                               "title": "Status",
 															"description": "🎂Janam KundalI Of The Bot",
@@ -1744,18 +1744,15 @@ await alpha.sendMessage(from, animerandomx, MessageType.buttonsMessage, {quoted:
 case 'soundmenu':
 stamtus =`❏ 「 \`\`\`SOUND MENU\`\`\` 」
 ────────────────────
-🤤 ${prefix}sound1
-🤤 ${prefix}sound2
-🤤 ${prefix}sound3
-🤤 ${prefix}sound4
-🤤 ${prefix}sound5
-🤤 ${prefix}sound6
-🤤 ${prefix}sound7
-🤤 ${prefix}sound8
-🤤 ${prefix}sound9
-🤤 ${prefix}sound10
+🤤 ${prefix}This
+🤤 ${prefix}FEATURE
+🤤 ${prefix}Is
+🤤 ${prefix}Useless
+🤤 ${prefix}Literally 
+🤤 ${prefix}Trust
+🤤 ${prefix}Me
 
-[ Total Sound 1-75 ]
+[ Made with <3 By Nischal.. ]
 ────────────────────`
 buttons = [
 {buttonId:`sc`, buttonText: {displayText: 'Yo Boi'}, type: 1},
@@ -1763,7 +1760,7 @@ buttons = [
 ]
 const soundM = {
     contentText: `${stamtus}`,
-    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
+    footerText: `_Powered By Xeon•ReMade By Nischal_`,
     buttons: buttons,
     headerType: 1
 }
@@ -2410,6 +2407,15 @@ if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 anu = await fetchJson(`https://waifu.pics/api/nsfw/trap`)
+buffer = await getBuffer(anu.url)
+alpha.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./nsfwdoge.jpg')})
+break
+case  'waifu':
+if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
+if (!isGroup) return reply('this feature is only for groups')
+if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
+reply(mess.wait)
+anu = await fetchJson(`https://waifu.pics/api/nsfw/waifu`)
 buffer = await getBuffer(anu.url)
 alpha.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./nsfwdoge.jpg')})
 break
@@ -5223,9 +5229,9 @@ break
                   return sendMediaURL(
                     from,
                     thumb,
-                    `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_`
+                    `*🎶Playing ${title}🎶*\n\n*Ext* : MP3\n\n_For the duration of more than the limit is presented in the link_`
                   );
-                const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Please wait for the media file to be sent it may take a few minutes_`;
+                const captions = `**🎶Playing ${title}🎶*\n\n*Ext* : MP3\n\n_Enjoi! 😜\n\n_Please wait for the media file to be sent it may take a few minutes_`;
                 sendMediaURL(from, thumb, captions);
                 await sendMediaURL(from, dl_link).catch(() => reply("error"));
               });
@@ -5338,9 +5344,9 @@ ytmp4 => Video`, contextInfo: { forwardingScore: 508, isForwarded: true, externa
                   return sendMediaURL(
                     from,
                     thumb,
-                    `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_`
+                    `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP3\n\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_`
                   );
-                const captions = `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP4\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Please wait for the media file to be sent it may take a few minutes_`;
+                const captions = `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP4\n\n_Please wait for the media file to be sent it may take a few minutes_`;
                 sendMediaURL(from, thumb, captions);
                 await sendMediaURL(from, dl_link).catch(() => reply("error"));
               });
