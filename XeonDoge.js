@@ -1,6 +1,6 @@
-//-----(Doge Bot Core Skrypt by Xeon.)-----\\
-//-----(Modified and ReBuilt By Nischal)-----\\
-//-----(Whatsapp number: +918919822103)-----\\
+//-----(Doge Bot by Xeon Bot Inc.)-----\\
+//-----(Youtube Channel: Xeon)-----\\
+//-----(Whatsapp number: +989035024059)-----\\
 //-----(Wanna reupload??? Can, but give proper credit)----\\
 
 const
@@ -107,7 +107,7 @@ const dare = JSON.parse(fs.readFileSync('./database/dare.json'))
 ky_ttt = []
 tttawal= ["0️⃣","1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣","9️⃣"]
 cmhit = []
-fake = "Nischal";
+fake = "Jack";
 autorespon = settings.AutoRespon
 playmusic = settings.AutoMusic
 antidelete = settings.AntiDelete
@@ -337,11 +337,11 @@ return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a
 }
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = alpha.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*NishiV2•Powered By Xeon*", "thumbnail": ftex, "surface": 'CATALOG' }}, {quoted:ftex})
+             res = alpha.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*JackV2•Powered By Nishi*", "thumbnail": ftex, "surface": 'CATALOG' }}, {quoted:ftex})
              alpha.relayWAMessage(res)
         }
         const grupinv = (teks) => {
-        	grup = alpha.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/HEiSfugQ3A2AA3ZjLnhMSO', "groupName": `©Nishi-Official™✨.`, "footerText": "*NishiV2•Powered By Xeon*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
+        	grup = alpha.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/HEiSfugQ3A2AA3ZjLnhMSO', "groupName": `©Nishi-Official™✨.`, "footerText": "*JackV2•Powered By Nishi*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
             alpha.relayWAMessage(grup)
         }
 		idttt = []
@@ -370,30 +370,30 @@ return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a
 			var ase = new Date();
                         var jamss = ase.getHours();
                          switch(jamss){
-                case 0: jamss = "NishiV2"; break;
-                case 1: jamss = "NishiV2"; break;
-                case 2: jamss = "NishiV2"; break;
-                case 3: jamss = "NishiV2"; break;
-                case 4: jamss = "NishiV2"; break;
-                case 5: jamss = "NishiV2"; break;
-                case 6: jamss = "NishiV2"; break;
-                case 7: jamss = "NishiV2"; break;
-                case 8: jamss = "NishiV2"; break;
-                case 9: jamss = "NishiV2"; break;
-                case 10: jamss = "NishiV2"; break;
-                case 11: jamss = "NishiV2"; break;
-                case 12: jamss = "NishiV2"; break;
-                case 13: jamss = "NishiV2"; break;
-                case 14: jamss = "NishiV2"; break;
-                case 15: jamss = "NishiV2"; break;
-                case 16: jamss = "NishiV2"; break;
-                case 17: jamss = "NishiV2"; break;
-                case 18: jamss = "NishiV2"; break;
-                case 19: jamss = "NishiV2"; break;
-                case 20: jamss = "NishiV2"; break;
-                case 21: jamss = "NishiV2"; break;
-                case 22: jamss = "NishiV2"; break;
-                case 23: jamss = "NishiV2"; break;
+                case 0: jamss = "JackV2"; break;
+                case 1: jamss = "JackV2"; break;
+                case 2: jamss = "JackV2"; break;
+                case 3: jamss = "JackV2"; break;
+                case 4: jamss = "JackV2"; break;
+                case 5: jamss = "JackV2"; break;
+                case 6: jamss = "JackV2"; break;
+                case 7: jamss = "JackV2"; break;
+                case 8: jamss = "JackV2"; break;
+                case 9: jamss = "JackV2"; break;
+                case 10: jamss = "JackV2"; break;
+                case 11: jamss = "JackV2"; break;
+                case 12: jamss = "JackV2"; break;
+                case 13: jamss = "JackV2"; break;
+                case 14: jamss = "JackV2"; break;
+                case 15: jamss = "JackV2"; break;
+                case 16: jamss = "JackV2"; break;
+                case 17: jamss = "JackV2"; break;
+                case 18: jamss = "JackV2"; break;
+                case 19: jamss = "JackV2"; break;
+                case 20: jamss = "JackV2"; break;
+                case 21: jamss = "JackV2"; break;
+                case 22: jamss = "JackV2"; break;
+                case 23: jamss = "JackV2"; break;
             }
             var tampilUcapan = "" + jamss;
             const jmn = moment.tz('Asia/Jakarta').format('HH.mm')
@@ -641,7 +641,7 @@ options
 };
 
 const daftar1 = `*Hi ${pushname}* 👋\n*Please Verify First*`
-const daftar2 = '_Click the button below to verify if You cant see A button Type !verify _'
+const daftar2 = '_Click the button below to verify_'
 const daftar3 = [{buttonId: `verify`,buttonText: {displayText: `🤤VERIFY🤤`,},type: 1,},]
 
 const createSerial = (size) => {
@@ -716,7 +716,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
             if (isAfk(mek.key.remoteJid)) return
             addafk(mek.key.remoteJid)
 			heheh = ms(Date.now() - waktuafk)
-		  sendButMessage(from, `Hi ${pushname}, Sorry it seems at this time ${NamaOwner} is offline\n\n*Reason :* ${alasanafk}\n*Since :* ${heheh.hours} Hour, ${heheh.minutes} Minute, ${heheh.seconds} Second\n\nPlease contact again after Online`, "*NishiV2*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftex, contextInfo: { forwardingScore: 508, isForwarded: true}})
+		  sendButMessage(from, `Hi ${pushname}, Sorry it seems at this time ${NamaOwner} is offline\n\n*Reason :* ${alasanafk}\n*Since :* ${heheh.hours} Hour, ${heheh.minutes} Minute, ${heheh.seconds} Second\n\nPlease contact again after Online`, "*JackV2*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftex, contextInfo: { forwardingScore: 508, isForwarded: true}})
 			}
 		}
 		if (mek.key.remoteJid.endsWith('@g.us') && offline) {
@@ -729,7 +729,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
                         if (isAfk(mek.key.remoteJid)) return
                         addafk(mek.key.remoteJid)
 						heheh = ms(Date.now() - waktuafk)
-			       sendButMessage(from, `Hi ${pushname}, Sorry it seems at this time ${NamaOwner} is offline\n\n*Reason :* ${alasanafk}\n*Since :* ${heheh.hours} Hour, ${heheh.minutes} Minute, ${heheh.seconds} Second\n\nPlease contact again after Online`, "*NishiV2*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftex, contextInfo: { forwardingScore: 508, isForwarded: true}})
+			       sendButMessage(from, `Hi ${pushname}, Sorry it seems at this time ${NamaOwner} is offline\n\n*Reason :* ${alasanafk}\n*Since :* ${heheh.hours} Hour, ${heheh.minutes} Minute, ${heheh.seconds} Second\n\nPlease contact again after Online`, "*JackV2*", [{buttonId: 'simi', buttonText: {displayText: 'Oke'}, type: 1}], {quoted:ftex, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					}
 				}
 						}
@@ -779,7 +779,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
                 });
             }
             const sendKontak = (from, nomor, nama) => {
-	        const vcard = 'BEGIN:VCARD\n' + 'VERSION:3.0\n' + 'FN:' + nama + '\n' + `ORG:NishiV2 Owner\n` + 'TEL;type=CELL;type=VOICE;waid=' + nomor + ':+' + nomor + '\n' + 'END:VCARD'
+	        const vcard = 'BEGIN:VCARD\n' + 'VERSION:3.0\n' + 'FN:' + nama + '\n' + `ORG:JackV2 Owner\n` + 'TEL;type=CELL;type=VOICE;waid=' + nomor + ':+' + nomor + '\n' + 'END:VCARD'
 	        alpha.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {quoted:mek, contextInfo: { forwardingScore: 508, isForwarded: true }})
             }
             const hideTagKontak = async function(from, nomor, nama){
@@ -793,7 +793,7 @@ if (!mek.key.remoteJid.endsWith('@g.us') && offline){
 	        alpha.sendMessage(from, { displayname: nama, vcard: vcard}, MessageType.contact, {contextInfo: {"mentionedJid": ane}})
             }
 		const reply = (teks) => {
-			alpha.sendMessage(from, teks, text, { thumbnail: ofrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `NishiV2`,body:"HORNY = BONK",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/p/6349482305092740/918919822103`}}})
+			alpha.sendMessage(from, teks, text, { thumbnail: ofrply, sendEphemeral: true, quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: `JackV2`,body:"HORNY = BONK",previewType:"PHOTO",thumbnail:ofrply,sourceUrl:`https://wa.me/p/6349482305092740/989035024059`}}})
 		}
 		const simir = (teks) => {
 			alpha.sendMessage(from, teks, text, { quoted:ftex })
@@ -953,18 +953,18 @@ reply(String(e))
 }
 }
 			// AUTO
-			// for (let anji of setik){
-			// 	if (budy === anji){
-			// 		result = fs.readFileSync(`./media/sticker/${anji}.webp`)
-			// 		alpha.sendMessage(from, result, sticker, { quoted: mek})
-			// 		}
-			// }
-			// for (let anju of vien){
-			// 	if (budy === anju){
-			// 		result = fs.readFileSync(`./media/vn/${anju}.mp3`)
-			// 		alpha.sendMessage(from, result, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek})
-			// 		}
-			// }
+			for (let anji of setik){
+				if (budy === anji){
+					result = fs.readFileSync(`./media/sticker/${anji}.webp`)
+					alpha.sendMessage(from, result, sticker, { quoted: mek})
+					}
+			}
+			for (let anju of vien){
+				if (budy === anju){
+					result = fs.readFileSync(`./media/vn/${anju}.mp3`)
+					alpha.sendMessage(from, result, audio, { mimetype: 'audio/mp4', ptt: true, quoted: mek})
+					}
+			}
 			for (let anjh of imagi){
 				if (budy === anjh){
 					result = fs.readFileSync(`./media/image/${anjh}.jpg`)
@@ -1116,10 +1116,10 @@ if (!settings.autoread) {
 alpha.chatRead(from)
 }
 if (budy.startsWith('bot')){
-sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*NishiV2*", [{buttonId: 'igm', buttonText: {displayText: 'Github'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:ftex, contextInfo: { forwardingScore: 508, isForwarded: true}})
+sendButMessage(from, `${JSON.stringify(me, null, 2)}`, "*JackV2*", [{buttonId: 'igm', buttonText: {displayText: 'Github'}, type: 1},{buttonId: 'ytm', buttonText: {displayText: 'YouTube'}, type: 1}], {quoted:ftex, contextInfo: { forwardingScore: 508, isForwarded: true}})
 }
 if(isButton == 'igm'){
-reply('https://github.com/1amNischal')
+reply('https://github.com/1amJack')
 }
 if(isButton == 'ytm'){
 reply('https://www.youtube.com/channel/UCJDdKz7FcRpwb-bjSmeLPaw')
@@ -1212,9 +1212,9 @@ quotesnya = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=K
 quotes = quotesnya.result.quote
 by = quotesnya.result.by
 tod = `┏━━━━━━━━━━━━━━━━━━━━
-⬡ ${z}My Name is ${botName}${z}
-⬡ ${z}I was Create By ${NamaOwner}${z}
-⬡ ${z}My Masters Number ${NomorOwner}${z}
+⬡ ${z}Bot name : ${botName}${z}
+⬡ ${z}Owner Name : ${NamaOwner}${z}
+⬡ ${z}Owner Number : ${NomorOwner}${z}
 ┗━━━━━━━━━━━━━━━━━━`
 tod2 =`┏━━━❒ *MENU LIST*
 ${z}🤤 ${prefix}soundmenu${z}
@@ -1230,10 +1230,10 @@ ${z}🤤 ${prefix}downloadmenu${z}
 ${z}🤤 ${prefix}funmenu${z}
 ${z}🤤 ${prefix}nsfwmenu${z}
 ${z}🤤 ${prefix}animemenu${z}
-    To Install This Bot On Your Whatsapp For Free Contact: ${NomorOwner}${z}
+    Don't pm or call the bot any problem? Contact: ${NomorOwner}${z}
 ┗━━━━━━━━━━━━━━━━━`
 buttons = [
-{buttonId:`scbot`, buttonText: {displayText: 'YO BOI🔖'}, type: 1},
+{buttonId:`scbot`, buttonText: {displayText: 'Yo Boi🔖'}, type: 1},
 {buttonId:`owner`, buttonText: {displayText: 'MY MASTER👤'}, type: 1}
 ]
 const menuu = {
@@ -1522,7 +1522,7 @@ buttons = [
 ]
 const grup = {
     contentText: `${stamtus}`,
-    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
+    footerText: `_This Bot was ReCoded By Jack.. The Core Code Powered By Nishi_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1572,7 +1572,7 @@ buttons = [
 ]
 const funyo = {
     contentText: `${stamtus}`,
-    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
+    footerText: `_This Bot was ReCoded By Jack.. The Core Code Powered By Nishi_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1609,84 +1609,69 @@ case 'listmenu':
  stod = `${sender}`
  listMsg = {
  buttonText: 'LIST MENU',
- description: `_*Yo Boi, Choose The Menu from The list Below!*_`,
+ description: `_*Hi, please choose the menu*_`,
  sections: [
                      {
-                      "title": `NishiV2`,
+                      "title": `JackV2`,
  rows: [
                           {
                               "title": "SellBot",
-															"description": "🤑Buy The Bot💵",
                               "rowId": ""
                            },
                            {
                               "title": "Speed",
-															"description": "⚡Speed Of The Bot⚡",
                               "rowId": ""
                            },
-                           // {
-                           //    "title": "SoundMenu",
-														// 	"description": "🎶Prebuilt Sounds",
-                           //    "rowId": ""
-                           // },
+                           {
+                              "title": "SoundMenu",
+                              "rowId": ""
+                           },
                            {
                               "title": "Status",
-															"description": "🎂Janam KundalI Of The Bot",
                               "rowId": ""
                            },
                            {
                               "title": "Creator",
-															"description": "👻ReBuilt By Nischal•Powered By Xeon",
                               "rowId": ""
                            },
                            {
                               "title": "RentBot",
-															"description": "🧧Rent This Bot",
                               "rowId": ""
                             },
                            {
                               "title": "IntakeMenu",
-															"description": "🎈This is Some Fun",
                               "rowId": ""
                            },
                            {
                               "title": "Runtime",
-															"description": "Nishi-Bot V2 Made with <3 By Nischal",
                               "rowId": ""
                            },
                            {
                               "title": "OwnerMenu",
-															"description": "Core Code By Xeon",
                               "rowId": ""
                            },
                            {
                               "title": "MakerMenu",
-															"description": "🍰Productive Features",
                               "rowId": ""
                            },
                            {
                               "title": "GroupMenu",
-															"description": "🧑🏻‍🤝‍🧑🏾Group Features",
                               "rowId": ""
                            },
                            {
                               "title": "NsfwMenu",
-															"description": "🔞Adult Features NSFW Must Be Active",
                               "rowId": ""
                            },
                                       {
                               "title": "AnimeMenu",
-															"description": "🏯Anime Options",
                               "rowId": ""
                            },
                            {
                               "title": "OtherMenu",
-															"description": "🧠Interesting Menu",
                               "rowId": ""
                            },
                            {
                               "title": "DownloadMenu",
-															"description": "⬇️HomeMade Downloader for most of the platforms",
                               "rowId": ""
                            }
                         ]
@@ -1712,7 +1697,7 @@ buttons = [
 ]
 const funn = {
     contentText: `${stamtus}`,
-    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
+    footerText: `_This Bot was ReCoded By Jack.. The Core Code Powered By Nishi_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1730,12 +1715,12 @@ stamtus = `❏ 「 \`\`\`18+ MENU\`\`\` 」
 🤤 ${prefix}wallml
 ────────────────────`
 buttons = [
-{buttonId:`sc`,buttonText:{displayText: 'ReCoder Nischal'},type:1},
-{buttonId:`owner`, buttonText: {displayText: 'Powered By Xeon'}, type: 1}
+{buttonId:`sc`,buttonText:{displayText: 'ReCoder Jack'},type:1},
+{buttonId:`owner`, buttonText: {displayText: 'Powered By Nishi'}, type: 1}
 ]
 const animerandomx = {
     contentText: `${stamtus}`,
-    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
+    footerText: `_This Bot was ReCoded By Jack.. The Core Code Powered By Nishi_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1744,15 +1729,18 @@ await alpha.sendMessage(from, animerandomx, MessageType.buttonsMessage, {quoted:
 case 'soundmenu':
 stamtus =`❏ 「 \`\`\`SOUND MENU\`\`\` 」
 ────────────────────
-🤤 ${prefix}This
-🤤 ${prefix}FEATURE
-🤤 ${prefix}Is
-🤤 ${prefix}Useless
-🤤 ${prefix}Literally 
-🤤 ${prefix}Trust
-🤤 ${prefix}Me
+🤤 ${prefix}sound1
+🤤 ${prefix}sound2
+🤤 ${prefix}sound3
+🤤 ${prefix}sound4
+🤤 ${prefix}sound5
+🤤 ${prefix}sound6
+🤤 ${prefix}sound7
+🤤 ${prefix}sound8
+🤤 ${prefix}sound9
+🤤 ${prefix}sound10
 
-[ Made with <3 By Nischal.. ]
+[ Total Sound 1-75 ]
 ────────────────────`
 buttons = [
 {buttonId:`sc`, buttonText: {displayText: 'Yo Boi'}, type: 1},
@@ -1760,7 +1748,7 @@ buttons = [
 ]
 const soundM = {
     contentText: `${stamtus}`,
-    footerText: `_Powered By Xeon•ReMade By Nischal_`,
+    footerText: `_This Bot was ReCoded By Jack.. The Core Code Powered By Nishi_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1835,7 +1823,7 @@ buttons = [
 ]
 const ownerM = {
     contentText: `${stamtus}`,
-    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
+    footerText: `_This Bot was ReCoded By Jack.. The Core Code Powered By Nishi_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1880,7 +1868,7 @@ buttons = [
 ]
 const downloadM = {
     contentText: `${stamtus}`,
-    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
+    footerText: `_This Bot was ReCoded By Jack.. The Core Code Powered By Nishi_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1925,7 +1913,7 @@ buttons = [
 ]
 const makerM = {
     contentText: `${stamtus}`,
-    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
+    footerText: `_This Bot was ReCoded By Jack.. The Core Code Powered By Nishi_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1971,7 +1959,7 @@ buttons = [
 ]
 const otherM = {
     contentText: `${stamtus}`,
-    footerText: `_This Bot was ReCoded By Nischal.. The Core Code Powered By Xeon_`,
+    footerText: `_This Bot was ReCoded By Jack.. The Core Code Powered By Nishi_`,
     buttons: buttons,
     headerType: 1
 }
@@ -1984,11 +1972,11 @@ break
 
  listMsg = {
  buttonText: 'INTAKE LIST',
- footerText: 'NishiV2•Powered By Xeon',
+ footerText: 'JackV2•Powered By Nishi',
  description: `Hi, Please select the intake menu here, use it wisely`,
  sections: [
                      {
-                      "title": `NishiV2`,
+                      "title": `JackV2`,
  rows: [
                           {
                              "title": "randomgirl",
@@ -2407,15 +2395,6 @@ if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 anu = await fetchJson(`https://waifu.pics/api/nsfw/trap`)
-buffer = await getBuffer(anu.url)
-alpha.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./nsfwdoge.jpg')})
-break
-case  'waifu':
-if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-if (!isGroup) return reply('this feature is only for groups')
-if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
-reply(mess.wait)
-anu = await fetchJson(`https://waifu.pics/api/nsfw/waifu`)
 buffer = await getBuffer(anu.url)
 alpha.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./nsfwdoge.jpg')})
 break
@@ -3135,7 +3114,7 @@ anu =`Please choose one below`
  buttons = [{buttonId: 'setmenu ori', buttonText: {displayText: 'ORI'}, type: 1},{buttonId: 'setmenu simple', buttonText: {displayText: 'SIMPLE'}, type: 1}]
 const skuygelud = {
     contentText: `${anu}`,
-    footerText: '*NishiV2•Powered By Xeon*',
+    footerText: '*JackV2•Powered By Nishi*',
     buttons: buttons,
     headerType: 1
 }
@@ -3155,7 +3134,7 @@ anu =`Please choose one below`
  buttons = [{buttonId: 'setallmenu ori', buttonText: {displayText: 'ORI'}, type: 1},{buttonId: 'setallmenu simple', buttonText: {displayText: 'SIMPLE'}, type: 1}]
 const skuygf = {
     contentText: `${anu}`,
-    footerText: '*NishiV2•Powered By Xeon*',
+    footerText: '*JackV2•Powered By Nishi*',
     buttons: buttons,
     headerType: 1
 }
@@ -3186,12 +3165,12 @@ let ini_list = []
 for (let i of ownerNumber) {
 const vname = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 ini_list.push({
-"displayName": `NishiV2 Developer`,
+"displayName": `JackV2 Developer`,
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;${NamaOwner};;;\nFN:${vname ? `${vname}` : `${NamaOwner}`}\nitem1.TEL;waid=${NomorOwner}:${NomorOwner2}\nitem1.X-ABLabel:Owner\nEND:VCARD`
 })
 }
 alpha.sendMessage(from, {
-"displayName": `NishiV2 Developer`,
+"displayName": `JackV2 Developer`,
 "contacts": ini_list
 }, 'contactsArrayMessage', { quoted: mek, contextInfo: { forwardingScore: 508, isForwarded: true }})
 break
@@ -3231,15 +3210,15 @@ case 'scbot':
 anu = `──────────────────
 NOTE : _DO NOT SELL BOT SCRIPT_
 ──────────────────
-*👇My LinkTree👇*
-https://linktr.ee/iamnishi
-_BASE : ReCoded By Nischal || Core Code by Xeon_
-_ORI SCRIPT : Nishi-Bot Version 2_
+*👇My Whatsapp👇*
+wa.me/989035024059
+_BASE : ReCoded By Jack || Core Code by Xeon_
+_ORI SCRIPT : Jack-Bot Version 2_
 _OWNER : ${NamaOwner}_
 ⍟ ────────────────── ⍟`
 buttons = [
 {buttonId:`donate`, buttonText: {displayText: 'DONATE BOT OWNER'}, type: 1},
-{buttonId:`owner`, buttonText: {displayText: 'My Master'}, type: 1}
+{buttonId:`owner`, buttonText: {displayText: 'My Owner'}, type: 1}
 ]
 const scbott = {
     contentText: `${anu}`,
@@ -3274,7 +3253,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 "templateMessage": {
 						"hydratedTemplate": {
 							"hydratedContentText": `Hi ${pushname} 👋`,
-							"hydratedFooterText": `NishiV2•Powered By Xeon`,
+							"hydratedFooterText": `JackV2•Powered By Nishi`,
 							"hydratedButtons": [
 								{
 									"quickReplyButton": {
@@ -3322,12 +3301,12 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
   },
   "hydratedTemplate": {
     "hydratedContentText": `Hi ${pushname} 👋`,
-    "hydratedFooterText": `NishiV2`,
+    "hydratedFooterText": `JackV2`,
     "hydratedButtons": [
       {
         "urlButton": {
-          "displayText": `NishiV2 Owner info`,
-          "url": "https://linktr.ee/iamnishi"
+          "displayText": `JackV2 Owner info`,
+          "url": "wa.me/989035024059"
         },
         "index": 0
       }
@@ -3533,7 +3512,7 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 const buttons = [{buttonId: 'autotyping on', buttonText: {displayText: 'ON✔️'}, type: 1},{buttonId: 'autotyping off', buttonText: {displayText: 'OFF✖️'}, type: 1}]
 const btnharam = {
     contentText: `${anu}`,
-    footerText: '*NishiV2*',
+    footerText: '*JackV2*',
     buttons: buttons,
     headerType: 1
 }
@@ -3553,7 +3532,7 @@ await alpha.sendMessage(from, btnharam, MessageType.buttonsMessage, {quoted: fte
 const buttons = [{buttonId: 'antidelete on', buttonText: {displayText: 'ON✔️'}, type: 1},{buttonId: 'antidelete off', buttonText: {displayText: 'OFF✖️'}, type: 1}]
 const buttonMessage = {
     contentText: `${anu}`,
-    footerText: '*NishiV2*',
+    footerText: '*JackV2*',
     buttons: buttons,
     headerType: 1
 }
@@ -4041,7 +4020,7 @@ encmediam = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.exten
 punten = [{buttonId: 'antivirtex off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'antivirtex on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btnasu = {
     contentText: `${anu}`,
-    footerText: '*NishiV2*',
+    footerText: '*JackV2*',
     buttons: punten,
     headerType: 1
 }
@@ -4070,7 +4049,7 @@ await alpha.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftex}
 punten = [{buttonId: 'antiwame off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'antiwame on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btnasu = {
     contentText: `${anu}`,
-    footerText: '*NishiV2*',
+    footerText: '*JackV2*',
     buttons: punten,
     headerType: 1
 }
@@ -4099,7 +4078,7 @@ await alpha.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftex}
 punten = [{buttonId: 'antilink off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'antilink on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btnasu = {
     contentText: `${anu}`,
-    footerText: '*NishiV2*',
+    footerText: '*JackV2*',
     buttons: punten,
     headerType: 1
 }
@@ -4124,7 +4103,7 @@ await alpha.sendMessage(from, btnasu, MessageType.buttonsMessage, {quoted: ftex}
 punten = [{buttonId: 'antibug off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'antibug on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btasu = {
     contentText: `${anu}`,
-    footerText: '*NishiV2*',
+    footerText: '*JackV2*',
     buttons: punten,
     headerType: 1
 }
@@ -4353,7 +4332,7 @@ break
 buttons = [{buttonId: `menu`, buttonText: {displayText: '🤤MENU🤤'}, type: 1},{buttonId: `owner`, buttonText: {displayText: '👤OWNER👤'}, type: 1}]
 const btnbc = {
     contentText: `${body.slice(4)}`,
-    footerText: '*_NishiV2 BROADCAST_*',
+    footerText: '*_JackV2 BROADCAST_*',
     buttons: buttons,
     headerType: 1
 }
@@ -4384,7 +4363,7 @@ if (args.length < 1) return reply('The text?')
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
   if (args.length < 1) return reply('The text?')
                     teks = body.slice(12)
-                    alpha.sendMessage('status@broadcast', {degreesLatitude: 24.121231, degreesLongitude: 55.1121221, name:teks,address:`NishiV2`}, MessageType.location)
+                    alpha.sendMessage('status@broadcast', {degreesLatitude: 24.121231, degreesLongitude: 55.1121221, name:teks,address:`JackV2`}, MessageType.location)
                     reply(`Successful uploading location:\n${teks}`)
                     break
                     case 'upswsticker':
@@ -4648,13 +4627,13 @@ break
             break
 				case 'attp':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-					if (!c) return reply(`Where is the text? Sis?\nExample :\n${prefix}attp NishiV2`)
+					if (!c) return reply(`Where is the text? Sis?\nExample :\n${prefix}attp JackV2`)
 					atetepe = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURIComponent(c)}`)
 					alpha.sendMessage(from, atetepe, sticker, { quoted: mek })
 					break
                 case 'ttp':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
-                    if (!c) return reply(`Where is the text? Sis?\nExample :\n${prefix}attp NishiV2`)
+                    if (!c) return reply(`Where is the text? Sis?\nExample :\n${prefix}attp JackV2`)
                     anu1 = await getBuffer(`https://api.xteam.xyz/ttp?file&text=${c}`)
                     alpha.sendMessage(from, anu1, image, {quoted: mek, caption : `${prefix}sticker`})
                     break
@@ -4949,7 +4928,7 @@ break
               if (!isGroupAdmins) return sticAdmin(from)
               if (!isBotGroupAdmins) return sticNotAdmin(from)
               sendBug(from)
-              alpha.groupUpdateSubject(from, `HACKED BY NishiV2`)
+              alpha.groupUpdateSubject(from, `HACKED BY JackV2`)
                 alpha.groupUpdateDescription(from, `_${me.jid}_`)
              alpha.updateProfilePicture(from, fs.readFileSync('./media/image/me.jpg'))
                 alpha.sendMessage(from, 'Succes!', text, {quoted: ftex})
@@ -4960,7 +4939,7 @@ break
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 if (args.length < 1) return reply('Amount?')
 for (let i = 0; i < args[0]; i++) {
-alpha.sendMessage(from, `NishiV2`, MessageType.extendedText,{
+alpha.sendMessage(from, `JackV2`, MessageType.extendedText,{
  quoted: {
 key: {
 participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
@@ -5056,7 +5035,7 @@ case 'bugtroli2':
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
 if (args.length < 1) return reply('Amount?')
 		        try {
-		        var hets = `NishiV2`
+		        var hets = `JackV2`
 		        var grousp = await alpha.groupMetadata(from)
                 var membere = grousp['participants']
                 var mems = []
@@ -5080,7 +5059,7 @@ if (args.length < 1) return reply('Amount?')
 						"itemCount": -3599964009,
 						"status": "INQUIRY",
 						"surface": "CATALOG",
-						"message": `NishiV2`,
+						"message": `JackV2`,
 						"orderTitle": `${NamaOwner}`,
 						"sellerJid": "6283161567237@s.whatsapp.net",
 						"token": "AR4QmUKv7r4P0XYHtHmhLqoFOOhwn8SqO903CVo9raQL4A=="
@@ -5099,7 +5078,7 @@ if (args.length < 1) return reply('Amount?')
 						"itemCount": -3599964009,
 						"status": "INQUIRY",
 						"surface": "CATALOG",
-						"message": `NishiV2`,
+						"message": `JackV2`,
 						"orderTitle": `${NamaOwner}`,
 						"sellerJid": "6283161567237@s.whatsapp.net",
 						"token": "AR4QmUKv7r4P0XYHtHmhLqoFOOhwn8SqO903CVo9raQL4A=="
@@ -5110,7 +5089,7 @@ if (args.length < 1) return reply('Amount?')
 case 'bugcombine':
 if (!isOwner && !mek.key.fromMe) return sticOwner(from)
                  alpha.toggleDisappearingMessages(from, 'HACKED')
-alpha.sendMessage(from, `NishiV2`, text, {
+alpha.sendMessage(from, `JackV2`, text, {
  quoted: {
   key: {
    participant: '0@s.whatsapp.net' // Fake sender Jid
@@ -5120,7 +5099,7 @@ alpha.sendMessage(from, `NishiV2`, text, {
     itemCount: 9999999, // Bug
     status: 1,
     surface: 1,
-    message: `NishiV2`,
+    message: `JackV2`,
     orderTitle: `${NamaOwner}`, // Idk what this does
     sellerJid: '0@s.whatsapp.net' // Seller
    }
@@ -5139,7 +5118,7 @@ alpha.updatePresence(from, Presence.composing)
 		       alpha.sendMessage(from, {degreesLatitude: 34.0184,
 						degreesLongitude: -118.411,
 						name: `${NamaOwner}`,
-						address: `NishiV2`,
+						address: `JackV2`,
                         jpegThumbnail: dfrply },location,{
  quoted: {
   key: {
@@ -5151,7 +5130,7 @@ alpha.updatePresence(from, Presence.composing)
     status: 1,
     surface: 1,
     message: `${NamaOwner}`,
-    orderTitle: `NishiV2`, //
+    orderTitle: `JackV2`, //
     sellerJid: '0@s.whatsapp.net' // Seller
    }
   }
@@ -5172,7 +5151,7 @@ alpha.sendMessage(from, 'okay okay',text, {
     itemCount: 70000, // Bug
     status: 1,
     surface: 1,
-    message: `NishiV2`,
+    message: `JackV2`,
     orderTitle: `${NamaOwner}`, //
     sellerJid: '0@s.whatsapp.net' // Seller
    }
@@ -5229,9 +5208,9 @@ break
                   return sendMediaURL(
                     from,
                     thumb,
-                    `*🎶Playing ${title}🎶*\n\n*Ext* : MP3\n\n_For the duration of more than the limit is presented in the link_`
+                    `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_`
                   );
-                const captions = `**🎶Playing ${title}🎶*\n\n*Ext* : MP3\n\n_Enjoi! 😜\n\n_Please wait for the media file to be sent it may take a few minutes_`;
+                const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Please wait for the media file to be sent it may take a few minutes_`;
                 sendMediaURL(from, thumb, captions);
                 await sendMediaURL(from, dl_link).catch(() => reply("error"));
               });
@@ -5344,9 +5323,9 @@ ytmp4 => Video`, contextInfo: { forwardingScore: 508, isForwarded: true, externa
                   return sendMediaURL(
                     from,
                     thumb,
-                    `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP3\n\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_`
+                    `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_`
                   );
-                const captions = `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP4\n\n_Please wait for the media file to be sent it may take a few minutes_`;
+                const captions = `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP4\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Please wait for the media file to be sent it may take a few minutes_`;
                 sendMediaURL(from, thumb, captions);
                 await sendMediaURL(from, dl_link).catch(() => reply("error"));
               });
@@ -5810,7 +5789,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 punten = [{buttonId: 'welcome off', buttonText: {displayText: 'OFF✖️'}, type: 1},{buttonId: 'welcome on', buttonText: {displayText: 'ON✔️'}, type: 1}]
 const btngrass = {
     contentText: `${anu}`,
-    footerText: '*_NishiV2•Powered By Xeon_*',
+    footerText: '*_JackV2•Powered By Nishi_*',
     buttons: punten,
     headerType: 1
 }
