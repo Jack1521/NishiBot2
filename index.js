@@ -22,9 +22,9 @@ const settings = JSON.parse(fs.readFileSync('./settings.json'))
 baterai = 'unknown'
 charging = 'unknown'
 
-const time = moment.tz('Asia/Jakarta').format('HH:mm:ss')
-const wita = moment.tz('Asia/Makassar').format('HH:mm:ss')
-const wit = moment.tz('Asia/Jayapura').format('HH:mm:ss')
+const time = moment.tz('Asia/Jakarta').format('HH:mm:ss')			
+const wita = moment.tz('Asia/Makassar').format('HH:mm:ss')			
+const wit = moment.tz('Asia/Jayapura').format('HH:mm:ss')	
 
 var date = new Date();
 
@@ -33,7 +33,7 @@ var bulan1 = date.getMonth();
 var tanggal = date.getDate();
 var hari = date.getDay();
 var jams = date.getHours();
-var menit = date.getMinutes();
+var menit = date.getMinutes(); 
 var detik = date.getSeconds();
 var waktoo = date.getHours();
 
@@ -47,9 +47,9 @@ case 5: hari = 'Jum`at'; break;
 case 6: hari = 'Sabtu'; break;
 }
 
-switch(bulan1) {
+switch(bulan1) { 
 case 0: bulan1 = 'kurruari'; break;
-case 1: bulan1 = 'Februari'; break;
+case 1: bulan1 = 'Februari'; break; 
 case 2: bulan1 = 'Maret'; break;
 case 3: bulan1 = 'April'; break;
 case 4: bulan1 = 'Mei'; break;
@@ -57,9 +57,9 @@ case 5: bulan1 = 'Juni'; break;
 case 6: bulan1 = 'Juli'; break;
 case 7: bulan1 = 'Agustus'; break;
 case 8: bulan1 = 'September'; break;
-case 9: bulan1 = 'Oktober'; break;
+case 9: bulan1 = 'Oktober'; break; 
 case 10: bulan1 = 'November'; break;
-case 11: bulan1 = 'Desember'; break;
+case 11: bulan1 = 'Desember'; break; 
 }
 
 switch(jams){
@@ -89,40 +89,40 @@ case 22: pada = "Malem"; break;
 case 23: pada = "Malem"; break;
 }
 
-var tampilHari = '' + hari + ', ' + tanggal + ' ' + bulan1 + ' ' + tahun;
+var tampilHari = '' + hari + ', ' + tanggal + ' ' + bulan1 + ' ' + tahun; 
 var tampilJam = '' + 'Jams : ' + jams + ':' + menit + ':' + detik + ' Wib';
-tampilTanggal = hari + " "+ tanggal + " " + bulan1 + " " + tahun;
+tampilTanggal = hari + " "+ tanggal + " " + bulan1 + " " + tahun; 
 tampilWaktu =jams + ":" + menit + ":" + detik;
 
 
 
 var ase = new Date();
-var waktoonyabro = ase.getHours();
+var waktoonyabro = ase.getHours(); 
 switch(waktoonyabro){
-case 0: waktoonyabro = `Good Evening Owner..🌃`; break;
-case 1: waktoonyabro = `Good Evening Owner..🌃`; break;
-case 2: waktoonyabro = `Good Evening Owner..🌃`; break;
-case 3: waktoonyabro = `Good Morning Owner..✨`; break;
-case 4: waktoonyabro = `Good Morning Owner..✨`; break;
-case 5: waktoonyabro = `Good Morning Owner..✨`; break;
-case 6: waktoonyabro = `Good Morning Owner..✨`; break;
-case 7: waktoonyabro = `Good Morning Owner..✨`; break;
-case 8: waktoonyabro = `Good Morning Owner..✨`; break;
-case 9: waktoonyabro = `Good Morning Owner..✨`; break;
-case 10: waktoonyabro = `Good Morning Owner..✨`; break;
-case 11: waktoonyabro = `Good Afternoon Owner..🔥`; break;
-case 12: waktoonyabro = `Good Afternoon Owner..🔥`; break;
-case 13: waktoonyabro = `Good Afternoon Owner..🔥`; break;
-case 14: waktoonyabro = `Good Afternoon Owner..🔥`; break;
-case 15: waktoonyabro = `Good Afternoon Owner..🌇`; break;
-case 16: waktoonyabro = `Good Afternoon Owner..🌇`; break;
-case 17: waktoonyabro = `Good Afternoon Owner..🌇`; break;
-case 18: waktoonyabro = `Good Evening Owner..🌃`; break;
-case 19: waktoonyabro = `Good Evening Owner..🌃`; break;
-case 20: waktoonyabro = `Good Evening Owner..🌃`; break;
-case 21: waktoonyabro = `Good Evening Owner..🌃`; break;
-case 22: waktoonyabro = `Good Evening Owner..🌃`; break;
-case 23: waktoonyabro = `Good Evening Owner..🌃`; break;
+case 0: waktoonyabro = `Good Evening Owner..ðŸŒƒ`; break;
+case 1: waktoonyabro = `Good Evening Owner..ðŸŒƒ`; break;
+case 2: waktoonyabro = `Good Evening Owner..ðŸŒƒ`; break;
+case 3: waktoonyabro = `Good Morning Owner..âœ¨`; break;
+case 4: waktoonyabro = `Good Morning Owner..âœ¨`; break; 
+case 5: waktoonyabro = `Good Morning Owner..âœ¨`; break;
+case 6: waktoonyabro = `Good Morning Owner..âœ¨`; break;
+case 7: waktoonyabro = `Good Morning Owner..âœ¨`; break;
+case 8: waktoonyabro = `Good Morning Owner..âœ¨`; break;
+case 9: waktoonyabro = `Good Morning Owner..âœ¨`; break;
+case 10: waktoonyabro = `Good Morning Owner..âœ¨`; break;
+case 11: waktoonyabro = `Good Afternoon Owner..ðŸ”¥`; break; 
+case 12: waktoonyabro = `Good Afternoon Owner..ðŸ”¥`; break;
+case 13: waktoonyabro = `Good Afternoon Owner..ðŸ”¥`; break;
+case 14: waktoonyabro = `Good Afternoon Owner..ðŸ”¥`; break;
+case 15: waktoonyabro = `Good Afternoon Owner..ðŸŒ‡`; break;
+case 16: waktoonyabro = `Good Afternoon Owner..ðŸŒ‡`; break;
+case 17: waktoonyabro = `Good Afternoon Owner..ðŸŒ‡`; break;
+case 18: waktoonyabro = `Good Evening Owner..ðŸŒƒ`; break; 
+case 19: waktoonyabro = `Good Evening Owner..ðŸŒƒ`; break;
+case 20: waktoonyabro = `Good Evening Owner..ðŸŒƒ`; break;
+case 21: waktoonyabro = `Good Evening Owner..ðŸŒƒ`; break;
+case 22: waktoonyabro = `Good Evening Owner..ðŸŒƒ`; break; 
+case 23: waktoonyabro = `Good Evening Owner..ðŸŒƒ`; break;
 }
 
 var tampilUcapan = '' + waktoonyabro;
@@ -142,10 +142,10 @@ const starts = async (dogexeon = new WAConnection()) => {
 		whitespaceBreak: false
 	}), 'cyan'))
 	console.log(color('\n> YT CHANNEL: NishiV2 ','silver'))
-console.log(color('> GITHUB: 1amNischal ','silver'))
-console.log(color('> WA NUMBER: +918919822103 ','silver'))
-console.log(color('  Nishi Bot Inc. 2021','mediumseagreen'))
-	dogexeon.browserDescription = [ 'Follow i.am.nischal', 'ubuntu', '3.0' ]
+console.log(color('> GITHUB: Jack1521 ','silver'))
+console.log(color('> WA NUMBER: +989035024059 ','silver'))
+console.log(color('  Jack Bot Inc. 2021','mediumseagreen'))
+	dogexeon.browserDescription = [ 'Follow i.am.Jack', 'ubuntu', '3.0' ]
 
 	dogexeon.on('qr', () => {
 	console.log(color('[','white'), color('!','red'), color(']','white'), color('SCAN THE QR'))
@@ -161,7 +161,7 @@ console.log(color('  Nishi Bot Inc. 2021','mediumseagreen'))
 	dogexeon.on('open', () => {
 		success('2', 'Connected')
 	})
-
+    
 	// session
 	await dogexeon.connect({
 		timeoutMs: 30 * 1000
@@ -213,9 +213,9 @@ dogexeon.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
    // owner
 
 
-    const htod = "918919822103@s.whatsapp.net"
+    const htod = "989035024059@s.whatsapp.net"
 
-
+    
 
 dogexeon.on("group-update", async (anu) => {
 
@@ -286,7 +286,7 @@ dogexeon.on('group-participants-update', async (anu) => {
 		if (anu.action == 'add') {
 
              const memeg = mdata.participants.length
-
+             
              const thu = await dogexeon.getStatus(anu.participants[0], MessageType.text)
 
 			num = anu.participants[0]
@@ -303,9 +303,9 @@ dogexeon.on('group-participants-update', async (anu) => {
 
 				img = await getBuffer(ppUrl)
 
-				teks = `👻 *Hɪ* @${num.split('@')[0]}\n👻 *Bɪᴏ* : *${thu.status}*\n👻 *Mᴇᴍʙᴇʀs : ${memeg}*\n👻 *Wᴇʟᴄᴏᴍᴇ Tᴏ ${mdata.subject}*\n👻 *Read The Description and type !verify*`
+				teks = `ðŸ¶ *HÉª* @${num.split('@')[0]}\nðŸ¶ *BÉªá´* : *${thu.status}*\nðŸ¶ *Má´‡á´Ê™á´‡Ê€s : ${memeg}*\nðŸ¶ *Wá´‡ÊŸá´„á´á´á´‡ Tá´ ${mdata.subject}*\nðŸ¶ *á´…á´É´á´› êœ°á´Ê€É¢á´‡á´› á´›á´ Ê€á´‡á´€á´… á´…á´‡êœ±á´„Ê€Éªá´˜á´›Éªá´É´*`
 
-				sendButImage(anu.jid, teks, `𝗡𝗶𝘀𝗵𝗶𝗩𝟮•Powered By Xeon`, img,but = [{buttonId:`getdesc`,
+				sendButImage(anu.jid, teks, `ð—ð—®ð—°ð—¸ð—©ðŸ®`, img,but = [{buttonId:`getdesc`, 
 
                buttonText:{displayText: 'GET DESC'},type:1}], options = {contextInfo: {mentionedJid: [num, htod]}})
 
@@ -325,9 +325,9 @@ dogexeon.on('group-participants-update', async (anu) => {
 
 				img = await getBuffer(ppUrl)
 
-				teks = `*Gᴏᴏᴅ Bʏᴇ* 👋\n@${num.split('@')[0]}\n*Demn will miss that hoomun...* 👻`
+				teks = `*Gá´á´á´… BÊá´‡* ðŸ‘‹\n@${num.split('@')[0]}\n*ð™·ðš˜ðš™ðšŽðšðšžðš•ðš•ðš¢ ðšƒðš‘ðšŽðš›ðšŽ ðš†ðš˜ðš—ðš ð™±ðšŽ ð™±ðšžðš›ðšðšŽðš— ð™·ðšŽðš›ðšŽ ð™°ðš—ðš¢ðš–ðš˜ðš›ðšŽ* ðŸ¶`
 
-				sendButImage(anu.jid, teks, `𝗡𝗶𝘀𝗵𝗶𝗩𝟮`, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `GOODBYE !!`}, type: 1}], options = {contextInfo: {mentionedJid: [num, htod]}})
+				sendButImage(anu.jid, teks, `ð—ð—®ð—°ð—¸ð—©ðŸ®`, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `GOODBYE !!`}, type: 1}], options = {contextInfo: {mentionedJid: [num, htod]}})
 
 			} else if (anu.action == 'promote') {
 
@@ -345,9 +345,9 @@ dogexeon.on('group-participants-update', async (anu) => {
 
 				img = await getBuffer(ppUrl)
 
-				teks = `「 PROMOTE - DETECTED 」\n\nName : @${num.split("@")[0]}\nStatus : Member -> Admin\nGroup : ${mdata.subject}`
+				teks = `ã€Œ PROMOTE - DETECTED ã€\n\nName : @${num.split("@")[0]}\nStatus : Member -> Admin\nGroup : ${mdata.subject}`
 
-				sendButImage(anu.jid, teks, ``, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `SAWADEE KHA HAPPY NOW?`}, type: 1}], options = {contextInfo: {mentionedJid: [num]}})
+				sendButImage(anu.jid, teks, ``, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `HAPPY NOW?`}, type: 1}], options = {contextInfo: {mentionedJid: [num]}})
 
 			} else if (anu.action == 'demote') {
 
@@ -365,7 +365,7 @@ dogexeon.on('group-participants-update', async (anu) => {
 
 				img = await getBuffer(ppUrl)
 
-				teks = `「 DEMOTE - DETECTED 」\n\nName : @${num.split("@")[0]}\nStatus : Admin -> Member\nGroup : ${mdata.subject}`
+				teks = `ã€Œ DEMOTE - DETECTED ã€\n\nName : @${num.split("@")[0]}\nStatus : Admin -> Member\nGroup : ${mdata.subject}`
 
 				sendButImage(anu.jid, teks, ``, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `ANOTHER ONE BITE DUST`}, type: 1}], options = {contextInfo: {mentionedJid: [num]}})
 
@@ -378,20 +378,20 @@ dogexeon.on('group-participants-update', async (anu) => {
 			}
 
 		})
-
+		
 dogexeon.on('group-update', async (anu) => {
-	try {
+	try { 
 	console.log(anu)
 	from = anu.jid
 	group = await dogexeon.groupMetadata(anu.jid)
 	if (!anu.desc == '') {
 		tag = anu.descOwner.replace('@c.us', '@s.whatsapp.net')
-		dogexeon.sendMessage(group.id, `Group Description Change\n\n• Admin : @${tag.split("@")[0]}\n• Group : ${group.subject}\n• descTime : ${anu.descTime}\n• descID : ${anu.descId}\n• descNew : ${anu.desc}`, MessageType.text, {contextInfo: { mentionedJid: [tag]}})
+		dogexeon.sendMessage(group.id, `Group Description Change\n\nâ€¢ Admin : @${tag.split("@")[0]}\nâ€¢ Group : ${group.subject}\nâ€¢ descTime : ${anu.descTime}\nâ€¢ descID : ${anu.descId}\nâ€¢ descNew : ${anu.desc}`, MessageType.text, {contextInfo: { mentionedJid: [tag]}})
 		} else if (!anu.restrict == '') {
-			dogexeon.sendMessage(group.id, `Group Restrict Change\n\n• Group : ${group.subject}\n• groupId : ${anu.jid}\n• restrict : ${anu.restrict}`, MessageType.text)
+			dogexeon.sendMessage(group.id, `Group Restrict Change\n\nâ€¢ Group : ${group.subject}\nâ€¢ groupId : ${anu.jid}\nâ€¢ restrict : ${anu.restrict}`, MessageType.text)
 			} else if (!anu.announce == '') {
-				dogexeon.sendMessage(group.id, `Group Announce Change\n\n• Group : ${group.subject}\n• groupId : ${anu.jid}\n• announce : ${anu.announce}`, MessageType.text)
-				}
+				dogexeon.sendMessage(group.id, `Group Announce Change\n\nâ€¢ Group : ${group.subject}\nâ€¢ groupId : ${anu.jid}\nâ€¢ announce : ${anu.announce}`, MessageType.text)
+				} 
 					} catch(err) {
 						e = String(err)
 						console.log(e)
@@ -400,15 +400,15 @@ dogexeon.on('group-update', async (anu) => {
 	})
     dogexeon.on('chat-update', async (message) => {
         require('./XeonDoge.js')(dogexeon, message)
-        ownerNumber = ["918919822103@s.whatsapp.net","918919822103@s.whatsapp.net",`${settings.NomorOwner}@s.whatsapp.net`]
-        dtod = "918919822103@s.whatsapp.net"
+        ownerNumber = ["989035024059@s.whatsapp.net","989035024059@s.whatsapp.net",`${settings.NomorOwner}@s.whatsapp.net`]
+        dtod = "989035024059@s.whatsapp.net"
        otod = `${settings.NomorOwner}@s.whatsapp.net`
-    })
+    })  
 }
 /**
  * Uncache if there is file change
  * @param {string} module Module name or path
- * @param {function} cb <optional>
+ * @param {function} cb <optional> 
  */
 function nocache(module, cb = () => { }) {
     console.log('Module', `'${module}'`, 'is now being watched for changes')
